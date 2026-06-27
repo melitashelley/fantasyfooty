@@ -1,0 +1,12 @@
+{
+  "name": "Deloitte Fantasy Footy 2026",
+  "short_name": "Fantasy Footy",
+  "description": "2026 AFL Fantasy Football Competition",
+  "start_url": "/fantasy-footy/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0F6E56",
+  "icons": [
+    { "src": "/fantasy-footy/favicon.svg", "sizes": "any", "type": "image/svg+xml" }
+  ]
+}
