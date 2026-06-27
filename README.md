@@ -1,2 +1,0 @@
-# fantasyfooty
-Fantasy Footy Webapp
