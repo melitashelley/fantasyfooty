@@ -29,12 +29,14 @@ function buildPlayerList(roster, roundNum, existingLineup) {
   if (existingLineup && existingLineup.length > 0) {
     const submittedNames = new Set(existingLineup.map(p => p.name))
 
-    // Derive subPriority for subs: sort existing subs by priority ascending → 1, 2, 3, 4
-    const existingSubs = existingLineup
-      .filter(p => p.isSub)
-      .sort((a, b) => a.priority - b.priority)
+    // Derive subPriority per position: sort subs within each position by priority ascending → 1, 2, 3…
     const subPriorityMap = {}
-    existingSubs.forEach((p, i) => { subPriorityMap[p.name] = i + 1 })
+    for (const pos of POSITION_ORDER) {
+      existingLineup
+        .filter(p => p.isSub && p.position === pos)
+        .sort((a, b) => a.priority - b.priority)
+        .forEach((p, i) => { subPriorityMap[p.name] = i + 1 })
+    }
 
     const result = existingLineup.map(lp => ({
       name: lp.name,
@@ -135,29 +137,30 @@ export default function SubmitLineup({ data, roundNum, onClose }) {
     })
   }
 
-  function setSubPriority(name, priority) {
+  function setSubPriority(name, position, priority) {
     setPlayers(prev => prev.map(p => {
       if (p.name === name) return { ...p, subPriority: priority }
-      if (p.subPriority === priority) return { ...p, subPriority: null }
+      if (p.position === position && p.isSub && p.subPriority === priority) return { ...p, subPriority: null }
       return p
     }))
   }
 
   function validate() {
     for (const pos of POSITION_ORDER) {
-      const starterCount = players.filter(p => p.position === pos && !p.isSub).length
+      const posPlayers = players.filter(p => p.position === pos)
+      const starterCount = posPlayers.filter(p => !p.isSub).length
       const limit = POSITION_LIMITS[pos]
       if (starterCount !== limit) {
         return `${POSITION_LABELS[pos]}: need exactly ${limit} starter${limit === 1 ? '' : 's'} (have ${starterCount})`
       }
-    }
-    const subs = players.filter(p => p.isSub)
-    if (subs.some(p => p.subPriority === null)) {
-      return 'All subs must have a priority (1–4) assigned'
-    }
-    const priorities = subs.map(p => p.subPriority)
-    if (new Set(priorities).size !== priorities.length) {
-      return 'Each sub priority can only be assigned once'
+      const subs = posPlayers.filter(p => p.isSub)
+      if (subs.some(p => p.subPriority === null)) {
+        return `${POSITION_LABELS[pos]}: all subs must have a priority assigned`
+      }
+      const priorities = subs.map(p => p.subPriority)
+      if (new Set(priorities).size !== priorities.length) {
+        return `${POSITION_LABELS[pos]}: each sub priority can only be assigned once`
+      }
     }
     return null
   }
@@ -305,7 +308,7 @@ export default function SubmitLineup({ data, roundNum, onClose }) {
 
       {!pastCutoff && (
         <p className="lineup-hint">
-          Tap ● to toggle starter/sub. Assign sub priorities 1–4.
+          Tap ● to toggle starter/sub. Assign sub priorities within each position.
         </p>
       )}
 
@@ -315,6 +318,7 @@ export default function SubmitLineup({ data, roundNum, onClose }) {
           if (!posPlayers.length) return null
           const limit = POSITION_LIMITS[pos]
           const starterCount = posPlayers.filter(p => !p.isSub).length
+          const subCount = posPlayers.length - limit
           return (
             <div key={pos} className="roster-position-group">
               <div className="roster-position-header">
@@ -336,11 +340,11 @@ export default function SubmitLineup({ data, roundNum, onClose }) {
                   <span className="player-name">{p.name}</span>
                   {p.isSub && !pastCutoff && (
                     <div className="sub-priority-btns">
-                      {[1, 2, 3, 4].map(n => (
+                      {Array.from({ length: subCount }, (_, i) => i + 1).map(n => (
                         <button
                           key={n}
                           className={`sub-priority-btn ${p.subPriority === n ? 'sub-priority-btn--active' : ''}`}
-                          onClick={() => setSubPriority(p.name, p.subPriority === n ? null : n)}
+                          onClick={() => setSubPriority(p.name, pos, p.subPriority === n ? null : n)}
                         >
                           {n}
                         </button>
