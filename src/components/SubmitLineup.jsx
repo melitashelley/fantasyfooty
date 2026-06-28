@@ -1,4 +1,4 @@
-import { useState, useRef } from 'react'
+import { useState } from 'react'
 import { submitLineup } from '../api.js'
 
 const POSITION_ORDER = ['Defender', 'Midfielder', 'Forward', 'Ruck']
@@ -21,42 +21,44 @@ function isPastCutoff(cutoff) {
   return cutoff ? new Date(cutoff) <= new Date() : false
 }
 
-/**
- * Build ordered player list from roster (and optional existing lineup).
- * Returns flat array sorted by position then priority.
- */
 function buildPlayerList(roster, roundNum, existingLineup) {
   if (!roster) return []
   const available = roster.filter(p => (p.from_round || 1) <= roundNum)
+  const rosterMap = Object.fromEntries(available.map(p => [p.name, p]))
 
   if (existingLineup && existingLineup.length > 0) {
-    // Use submitted order, fall back to roster for anyone missing
-    const submitted = [...existingLineup].sort((a, b) => {
+    const submittedNames = new Set(existingLineup.map(p => p.name))
+
+    // Derive subPriority for subs: sort existing subs by priority ascending → 1, 2, 3, 4
+    const existingSubs = existingLineup
+      .filter(p => p.isSub)
+      .sort((a, b) => a.priority - b.priority)
+    const subPriorityMap = {}
+    existingSubs.forEach((p, i) => { subPriorityMap[p.name] = i + 1 })
+
+    const result = existingLineup.map(lp => ({
+      name: lp.name,
+      position: lp.position,
+      afl_team: rosterMap[lp.name]?.afl_team || '',
+      isSub: lp.isSub,
+      subPriority: lp.isSub ? (subPriorityMap[lp.name] ?? null) : null,
+    }))
+
+    // Add any roster players missing from the submission as subs
+    available
+      .filter(p => !submittedNames.has(p.name))
+      .forEach(p => result.push({ name: p.name, position: p.position, afl_team: p.afl_team, isSub: true, subPriority: null }))
+
+    result.sort((a, b) => {
       const pi = POSITION_ORDER.indexOf(a.position)
       const qi = POSITION_ORDER.indexOf(b.position)
-      return pi !== qi ? pi - qi : a.priority - b.priority
+      if (pi !== qi) return pi - qi
+      return a.name.localeCompare(b.name)
     })
-    const submittedNames = new Set(submitted.map(p => p.name))
-    // Add any roster players not in submitted lineup (as subs at the end)
-    const rosterMap = Object.fromEntries(available.map(p => [p.name, p]))
-    const extras = available.filter(p => !submittedNames.has(p.name))
-    const extrasByPos = {}
-    for (const pos of POSITION_ORDER) extrasByPos[pos] = []
-    for (const p of extras) if (extrasByPos[p.position]) extrasByPos[p.position].push(p)
-
-    const result = submitted.map(p => ({
-      name: p.name,
-      position: p.position,
-      afl_team: rosterMap[p.name]?.afl_team || '',
-      isSub: p.isSub,
-    }))
-    for (const pos of POSITION_ORDER) {
-      for (const p of extrasByPos[pos]) result.push({ name: p.name, position: pos, afl_team: p.afl_team, isSub: true })
-    }
     return result
   }
 
-  // Default: roster sheet order, auto-assign isSub by position
+  // Default: alphabetical within each position, auto-assign isSub by limits
   const grouped = {}
   for (const pos of POSITION_ORDER) grouped[pos] = []
   for (const p of available) if (grouped[p.position]) grouped[p.position].push(p)
@@ -64,31 +66,12 @@ function buildPlayerList(roster, roundNum, existingLineup) {
   const result = []
   for (const pos of POSITION_ORDER) {
     const limit = POSITION_LIMITS[pos] ?? 99
+    grouped[pos].sort((a, b) => a.name.localeCompare(b.name))
     grouped[pos].forEach((p, i) => {
-      result.push({ name: p.name, position: pos, afl_team: p.afl_team, isSub: i >= limit })
+      result.push({ name: p.name, position: pos, afl_team: p.afl_team, isSub: i >= limit, subPriority: null })
     })
   }
   return result
-}
-
-/** Swap a player one step up or down within their position group */
-function movePlayer(players, name, direction) {
-  const idx = players.findIndex(p => p.name === name)
-  if (idx === -1) return players
-  const pos = players[idx].position
-  const posIdxs = players.map((p, i) => p.position === pos ? i : -1).filter(i => i >= 0)
-  const rank = posIdxs.indexOf(idx)
-  const swapRank = direction === 'up' ? rank - 1 : rank + 1
-  if (swapRank < 0 || swapRank >= posIdxs.length) return players
-  const next = [...players]
-  ;[next[idx], next[posIdxs[swapRank]]] = [next[posIdxs[swapRank]], next[idx]]
-  // Recompute isSub
-  const limit = POSITION_LIMITS[pos] ?? 99
-  let rank2 = 0
-  return next.map(p => {
-    if (p.position !== pos) return p
-    return { ...p, isSub: rank2++ >= limit }
-  })
 }
 
 export default function SubmitLineup({ data, roundNum, onClose }) {
@@ -110,10 +93,6 @@ export default function SubmitLineup({ data, roundNum, onClose }) {
   const [submitted, setSubmitted] = useState(false)
   const [submitError, setSubmitError] = useState('')
 
-  // Touch drag state
-  const dragItem = useRef(null)
-  const dragOverItem = useRef(null)
-
   const pastCutoff = isPastCutoff(roundData?.cutoff)
   const countdown = cutoffLabel(roundData?.cutoff)
 
@@ -128,52 +107,86 @@ export default function SubmitLineup({ data, roundNum, onClose }) {
     setStep(2)
   }
 
-  function handleDragStart(name) { dragItem.current = name }
-  function handleDragEnter(name) { dragOverItem.current = name }
-  function handleDragEnd() {
-    const from = dragItem.current
-    const to = dragOverItem.current
-    if (!from || !to || from === to) { dragItem.current = null; dragOverItem.current = null; return }
+  function toggleStarter(name) {
     setPlayers(prev => {
-      const fromIdx = prev.findIndex(p => p.name === from)
-      const toIdx   = prev.findIndex(p => p.name === to)
-      if (fromIdx === -1 || toIdx === -1) return prev
-      if (prev[fromIdx].position !== prev[toIdx].position) return prev // only within same position
-      const next = [...prev]
-      next.splice(toIdx, 0, next.splice(fromIdx, 1)[0])
-      // Recompute isSub
-      const pos   = prev[fromIdx].position
+      const idx = prev.findIndex(p => p.name === name)
+      if (idx === -1) return prev
+      const player = prev[idx]
+      const pos = player.position
       const limit = POSITION_LIMITS[pos] ?? 99
-      let rank = 0
-      return next.map(p => p.position !== pos ? p : { ...p, isSub: rank++ >= limit })
+      const next = [...prev]
+
+      if (player.isSub) {
+        // Promote to starter — if at limit, demote the last starter alphabetically
+        const starterCount = prev.filter(p => p.position === pos && !p.isSub).length
+        if (starterCount >= limit) {
+          const lastStarterIdx = prev
+            .map((p, i) => ({ ...p, _i: i }))
+            .filter(p => p.position === pos && !p.isSub)
+            .sort((a, b) => b.name.localeCompare(a.name))[0]._i
+          next[lastStarterIdx] = { ...prev[lastStarterIdx], isSub: true, subPriority: null }
+        }
+        next[idx] = { ...player, isSub: false, subPriority: null }
+      } else {
+        // Demote to sub
+        next[idx] = { ...player, isSub: true, subPriority: null }
+      }
+      return next
     })
-    dragItem.current = null; dragOverItem.current = null
+  }
+
+  function setSubPriority(name, priority) {
+    setPlayers(prev => prev.map(p => {
+      if (p.name === name) return { ...p, subPriority: priority }
+      if (p.subPriority === priority) return { ...p, subPriority: null }
+      return p
+    }))
+  }
+
+  function validate() {
+    for (const pos of POSITION_ORDER) {
+      const starterCount = players.filter(p => p.position === pos && !p.isSub).length
+      const limit = POSITION_LIMITS[pos]
+      if (starterCount !== limit) {
+        return `${POSITION_LABELS[pos]}: need exactly ${limit} starter${limit === 1 ? '' : 's'} (have ${starterCount})`
+      }
+    }
+    const subs = players.filter(p => p.isSub)
+    if (subs.some(p => p.subPriority === null)) {
+      return 'All subs must have a priority (1–4) assigned'
+    }
+    const priorities = subs.map(p => p.subPriority)
+    if (new Set(priorities).size !== priorities.length) {
+      return 'Each sub priority can only be assigned once'
+    }
+    return null
   }
 
   async function handleSubmit() {
+    const validationError = validate()
+    if (validationError) { setSubmitError(validationError); return }
+
     setSubmitting(true)
     setSubmitError('')
     try {
-      let priority = {}
-      for (const pos of POSITION_ORDER) {
-        let n = 1
-        for (const p of players.filter(pl => pl.position === pos)) priority[p.name] = n++
-      }
       const payload = {
         round: roundNum,
         team: teamName,
         teamCode: teamCode.trim().toUpperCase(),
         submittedAt: new Date().toISOString(),
-        players: players.map(p => ({
-          name: p.name,
-          position: p.position,
-          priority: priority[p.name],
-          isSub: p.isSub,
-        })),
+        players: players.map(p => {
+          if (!p.isSub) {
+            const posStarters = players
+              .filter(pl => pl.position === p.position && !pl.isSub)
+              .sort((a, b) => a.name.localeCompare(b.name))
+            const priority = posStarters.findIndex(pl => pl.name === p.name) + 1
+            return { name: p.name, position: p.position, priority, isSub: false }
+          }
+          return { name: p.name, position: p.position, priority: p.subPriority, isSub: true }
+        }),
       }
       const result = await submitLineup(payload)
       if (result?.error) throw new Error(result.error)
-      // Remember team code so the rounds screen can show submitted status
       localStorage.setItem('ff_team_code', teamCode.trim().toUpperCase())
       setSubmitted(true)
     } catch {
@@ -214,10 +227,8 @@ export default function SubmitLineup({ data, roundNum, onClose }) {
     )
   }
 
-  // ── Success: show submitted lineup in read-only view ─────────
+  // ── Success: read-only view ───────────────────────────────────
   if (submitted) {
-    const submittedGroups = {}
-    for (const pos of POSITION_ORDER) submittedGroups[pos] = players.filter(p => p.position === pos)
     return (
       <div className="submit-overlay">
         <div className="submit-overlay-header">
@@ -231,28 +242,39 @@ export default function SubmitLineup({ data, roundNum, onClose }) {
         </div>
         <div className="roster-scroll">
           {POSITION_ORDER.map(pos => {
-            const posPlayers = submittedGroups[pos] || []
+            const starters = players
+              .filter(p => p.position === pos && !p.isSub)
+              .sort((a, b) => a.name.localeCompare(b.name))
+            const subs = players
+              .filter(p => p.position === pos && p.isSub)
+              .sort((a, b) => (a.subPriority ?? 99) - (b.subPriority ?? 99))
+            const posPlayers = [...starters, ...subs]
             if (!posPlayers.length) return null
-            const limit = POSITION_LIMITS[pos]
             return (
               <div key={pos} className="roster-position-group">
                 <div className="roster-position-header">
                   <span className="pos-label">{POSITION_LABELS[pos].toUpperCase()}</span>
-                  <span className="pos-count pos-count-full">{limit} starters</span>
+                  <span className="pos-count pos-count-full">{POSITION_LIMITS[pos]} starters</span>
                 </div>
-                {posPlayers.map((p, i) => {
-                  const isLastStarter = i === limit - 1 && posPlayers.length > limit
-                  return (
-                    <div key={p.name}>
-                      <div className={`player-order-row ${p.isSub ? 'is-sub' : 'is-starter'}`}>
-                        <span className={`priority-badge ${p.isSub ? 'badge-sub' : 'badge-starter'}`}>{i + 1}</span>
-                        <span className="player-name">{p.name}</span>
-                        {p.isSub && <span className="player-role-tag">Sub</span>}
-                      </div>
-                      {isLastStarter && <div className="starter-divider"><span>Subs</span></div>}
-                    </div>
-                  )
-                })}
+                {starters.length > 0 && subs.length > 0 && (
+                  <div className="starter-divider starter-divider--top"><span>Starters</span></div>
+                )}
+                {starters.map(p => (
+                  <div key={p.name} className="player-order-row is-starter">
+                    <span className="lineup-dot lineup-dot--starter" />
+                    <span className="player-name">{p.name}</span>
+                  </div>
+                ))}
+                {subs.length > 0 && (
+                  <div className="starter-divider"><span>Subs</span></div>
+                )}
+                {subs.map(p => (
+                  <div key={p.name} className="player-order-row is-sub">
+                    <span className="lineup-dot lineup-dot--sub" />
+                    <span className="player-name">{p.name}</span>
+                    {p.subPriority != null && <span className="player-role-tag">Sub {p.subPriority}</span>}
+                  </div>
+                ))}
               </div>
             )
           })}
@@ -268,10 +290,7 @@ export default function SubmitLineup({ data, roundNum, onClose }) {
     )
   }
 
-  // ── Step 2: Drag to order ─────────────────────────────────────
-  const groupedPlayers = {}
-  for (const pos of POSITION_ORDER) groupedPlayers[pos] = players.filter(p => p.position === pos)
-
+  // ── Step 2: Select starters & sub priorities ──────────────────
   return (
     <div className="submit-overlay">
       <div className="submit-overlay-header">
@@ -285,49 +304,54 @@ export default function SubmitLineup({ data, roundNum, onClose }) {
         : <div className="countdown-banner">{countdown}</div>}
 
       {!pastCutoff && (
-        <p className="lineup-hint">Drag ☰ to reorder. Top {POSITION_LIMITS.Defender} Def · {POSITION_LIMITS.Midfielder} Mid · {POSITION_LIMITS.Forward} Fwd · {POSITION_LIMITS.Ruck} Ruck are starters.</p>
+        <p className="lineup-hint">
+          Tap ● to toggle starter/sub. Assign sub priorities 1–4.
+        </p>
       )}
 
       <div className="roster-scroll">
         {POSITION_ORDER.map(pos => {
-          const posPlayers = groupedPlayers[pos] || []
+          const posPlayers = players.filter(p => p.position === pos)
           if (!posPlayers.length) return null
           const limit = POSITION_LIMITS[pos]
+          const starterCount = posPlayers.filter(p => !p.isSub).length
           return (
             <div key={pos} className="roster-position-group">
               <div className="roster-position-header">
                 <span className="pos-label">{POSITION_LABELS[pos].toUpperCase()}</span>
-                <span className="pos-count pos-count-full">{limit} starters</span>
+                <span className={`pos-count ${starterCount === limit ? 'pos-count-full' : 'pos-count-warn'}`}>
+                  {starterCount}/{limit} starters
+                </span>
               </div>
-              {posPlayers.map((p, i) => {
-                const isLastStarter = i === limit - 1 && posPlayers.length > limit
-                return (
-                  <div key={p.name}>
-                    <div
-                      className={`player-order-row ${p.isSub ? 'is-sub' : 'is-starter'}`}
-                      draggable={!pastCutoff}
-                      onDragStart={() => handleDragStart(p.name)}
-                      onDragEnter={() => handleDragEnter(p.name)}
-                      onDragEnd={handleDragEnd}
-                      onDragOver={e => e.preventDefault()}
-                    >
-                      <span className={`priority-badge ${p.isSub ? 'badge-sub' : 'badge-starter'}`}>
-                        {i + 1}
-                      </span>
-                      <span className="player-name">{p.name}</span>
-                      {p.isSub && <span className="player-role-tag">Sub</span>}
-                      {!pastCutoff && (
-                        <div className="reorder-btns">
-                          <button className="reorder-btn" onClick={() => setPlayers(prev => movePlayer(prev, p.name, 'up'))} disabled={i === 0}>▲</button>
-                          <button className="reorder-btn" onClick={() => setPlayers(prev => movePlayer(prev, p.name, 'down'))} disabled={i === posPlayers.length - 1}>▼</button>
-                        </div>
-                      )}
-                      {!pastCutoff && <span className="drag-handle">☰</span>}
+              {posPlayers.map(p => (
+                <div key={p.name} className={`player-order-row ${p.isSub ? 'is-sub' : 'is-starter'}`}>
+                  <button
+                    className="lineup-toggle-btn"
+                    onClick={() => !pastCutoff && toggleStarter(p.name)}
+                    disabled={pastCutoff}
+                    aria-label={p.isSub ? 'Make starter' : 'Make sub'}
+                  >
+                    <span className={`lineup-dot ${p.isSub ? 'lineup-dot--sub' : 'lineup-dot--starter'}`} />
+                  </button>
+                  <span className="player-name">{p.name}</span>
+                  {p.isSub && !pastCutoff && (
+                    <div className="sub-priority-btns">
+                      {[1, 2, 3, 4].map(n => (
+                        <button
+                          key={n}
+                          className={`sub-priority-btn ${p.subPriority === n ? 'sub-priority-btn--active' : ''}`}
+                          onClick={() => setSubPriority(p.name, p.subPriority === n ? null : n)}
+                        >
+                          {n}
+                        </button>
+                      ))}
                     </div>
-                    {isLastStarter && <div className="starter-divider"><span>Subs</span></div>}
-                  </div>
-                )
-              })}
+                  )}
+                  {p.isSub && pastCutoff && p.subPriority != null && (
+                    <span className="player-role-tag">Sub {p.subPriority}</span>
+                  )}
+                </div>
+              ))}
             </div>
           )
         })}

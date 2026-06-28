@@ -640,8 +640,13 @@
   color: var(--text-secondary);
 }
 
-.pos-count.count-full {
+.pos-count.count-full,
+.pos-count-full {
   color: var(--green);
+}
+
+.pos-count-warn {
+  color: var(--status-live);
 }
 
 .player-toggle-row {
@@ -708,7 +713,6 @@
   padding: 10px 16px;
   border-bottom: 1px solid var(--border);
   background: var(--bg);
-  cursor: grab;
 }
 
 .player-order-row:last-child { border-bottom: none; }
@@ -769,6 +773,63 @@
   cursor: grab;
   padding: 0 2px;
   user-select: none;
+}
+
+/* ── Starter toggle dot ───────────────────────────────────── */
+.lineup-toggle-btn {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.lineup-dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  display: block;
+}
+
+.lineup-dot--starter {
+  background: var(--green);
+}
+
+.lineup-dot--sub {
+  background: none;
+  border: 2px solid var(--border);
+}
+
+/* ── Sub priority buttons ─────────────────────────────────── */
+.sub-priority-btns {
+  display: flex;
+  gap: 4px;
+  margin-left: auto;
+}
+
+.sub-priority-btn {
+  width: 28px;
+  height: 28px;
+  border-radius: 6px;
+  border: 1.5px solid var(--border);
+  background: none;
+  color: var(--text-secondary);
+  font-size: 12px;
+  font-weight: 600;
+  font-family: inherit;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sub-priority-btn--active {
+  background: var(--green);
+  border-color: var(--green);
+  color: #fff;
 }
 
 .starter-divider {

@@ -134,6 +134,12 @@ export default function MyTeam({ data, onNextMatchClick, onChangeTeam }) {
   }
 
   const displayRoster = buildDisplayRoster()
+  displayRoster.sort((a, b) => {
+    const pi = POSITION_ORDER.indexOf(a.position)
+    const qi = POSITION_ORDER.indexOf(b.position)
+    if (pi !== qi) return pi - qi
+    return a.name.localeCompare(b.name)
+  })
 
   const playerSeasonTotals = data.playerSeasonTotals || {}
   const playerEarnedByTeam = data.playerEarnedByTeam?.[storedTeam] || {}

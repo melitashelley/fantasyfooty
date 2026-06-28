@@ -19,7 +19,7 @@ function groupByPosition(players) {
   for (const pos of POSITION_ORDER) {
     groups[pos].sort((a, b) => {
       if (a.isSub !== b.isSub) return a.isSub ? 1 : -1
-      return a.priority - b.priority
+      return a.name.localeCompare(b.name)
     })
   }
   return groups
