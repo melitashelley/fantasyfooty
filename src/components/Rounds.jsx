@@ -1,6 +1,24 @@
 import { useState, useRef, useEffect } from 'react'
 
 const TOTAL_ROUNDS = 23
+const POSITION_ORDER = ['Defender', 'Midfielder', 'Forward', 'Ruck']
+const POSITION_LABEL = { Defender: 'Defenders', Midfielder: 'Midfielders', Forward: 'Forwards', Ruck: 'Ruck' }
+
+function groupByPosition(players) {
+  const groups = {}
+  for (const pos of POSITION_ORDER) groups[pos] = []
+  for (const p of players || []) {
+    if (groups[p.position]) groups[p.position].push(p)
+  }
+  for (const pos of POSITION_ORDER) {
+    groups[pos].sort((a, b) => {
+      if (a.isSub !== b.isSub) return a.isSub ? 1 : -1
+      if (!a.isSub) return a.name.localeCompare(b.name)
+      return (a.priority || 0) - (b.priority || 0)
+    })
+  }
+  return groups
+}
 
 function getPillClass(roundNum, selectedRound, data) {
   if (roundNum === selectedRound) return 'round-pill selected'
@@ -91,28 +109,80 @@ function MatchCard({ match, status, onClick }) {
   )
 }
 
-function FixtureMatch({ match, homeSubmitted, awaySubmitted, isUserMatch, onClick }) {
+function FixtureMatch({ match, homeSubmitted, awaySubmitted, isUserMatch, userTeam, userLineup, cutoffOk, onSubmitLineup, roundNum, onClick }) {
+  const [lineupOpen, setLineupOpen] = useState(false)
+  const userIsHome = userTeam === match.home
+  const userIsAway = userTeam === match.away
+  const userSubmitted = (userIsHome && homeSubmitted) || (userIsAway && awaySubmitted)
+  const groups = groupByPosition(userLineup || [])
+
+  function statusLabel(team, submitted) {
+    if (team === userTeam && submitted) {
+      return (
+        <div className="fixture-user-actions">
+          <button className="fixture-submit-link" onClick={(e) => { e.stopPropagation(); setLineupOpen(o => !o) }}>
+            {lineupOpen ? 'Hide lineup' : 'View lineup'}
+          </button>
+          {cutoffOk && (
+            <>
+              <span className="fixture-action-sep">·</span>
+              <button className="fixture-submit-link" onClick={(e) => { e.stopPropagation(); onSubmitLineup(roundNum) }}>
+                Edit lineup
+              </button>
+            </>
+          )}
+        </div>
+      )
+    }
+    if (team === userTeam && !submitted && cutoffOk) {
+      return (
+        <button className="fixture-submit-link" onClick={(e) => { e.stopPropagation(); onSubmitLineup(roundNum) }}>
+          Submit lineup →
+        </button>
+      )
+    }
+    if (submitted) return <span className="fixture-submitted">✓ Submitted</span>
+    return <span className="fixture-not-submitted">Not submitted</span>
+  }
+
   return (
-    <div
-      className={`fixture-match${isUserMatch ? ' fixture-match--clickable' : ''}`}
-      onClick={isUserMatch ? onClick : undefined}
-      role={isUserMatch ? 'button' : undefined}
-      tabIndex={isUserMatch ? 0 : undefined}
-      onKeyDown={isUserMatch ? (e) => e.key === 'Enter' && onClick?.() : undefined}
-    >
-      <div className="fixture-match-side">
-        <span className="fixture-team">{match.home}</span>
-        {homeSubmitted
-          ? <span className="fixture-submitted">✓ Submitted</span>
-          : <span className="fixture-not-submitted">Not submitted</span>}
+    <div className="fixture-card">
+      <div
+        className={`fixture-match${isUserMatch ? ' fixture-match--clickable' : ''}`}
+        onClick={isUserMatch ? onClick : undefined}
+        role={isUserMatch ? 'button' : undefined}
+        tabIndex={isUserMatch ? 0 : undefined}
+        onKeyDown={isUserMatch ? (e) => e.key === 'Enter' && onClick?.() : undefined}
+      >
+        <div className="fixture-match-side">
+          <span className="fixture-team">{match.home}</span>
+          {statusLabel(match.home, homeSubmitted)}
+        </div>
+        <span className="fixture-v">v</span>
+        <div className="fixture-match-side right">
+          <span className="fixture-team">{match.away}</span>
+          {statusLabel(match.away, awaySubmitted)}
+        </div>
       </div>
-      <span className="fixture-v">v</span>
-      <div className="fixture-match-side right">
-        <span className="fixture-team">{match.away}</span>
-        {awaySubmitted
-          ? <span className="fixture-submitted">✓ Submitted</span>
-          : <span className="fixture-not-submitted">Not submitted</span>}
-      </div>
+      {lineupOpen && userSubmitted && (
+        <div className="fixture-lineup-expanded">
+          {POSITION_ORDER.map(pos => {
+            const posPlayers = groups[pos]
+            if (!posPlayers?.length) return null
+            return (
+              <div key={pos}>
+                <div className="fixture-lineup-pos-header">{POSITION_LABEL[pos]}</div>
+                {posPlayers.map(p => (
+                  <div key={p.name} className={`fixture-lineup-player${p.isSub ? ' is-sub' : ''}`}>
+                    <span>{p.name}</span>
+                    {p.isSub && p.priority != null && <span className="fixture-lineup-sub-tag">Sub {p.priority}</span>}
+                  </div>
+                ))}
+              </div>
+            )
+          })}
+        </div>
+      )}
     </div>
   )
 }
@@ -147,12 +217,6 @@ export default function Rounds({ data, onMatchClick, onUpcomingMatchClick, onSub
   const hasMatchData = status === 'complete' || status === 'in_progress'
   const selectedCutoff = roundData?.cutoff
   const cutoffOk = selectedCutoff ? new Date(selectedCutoff) > new Date() : true
-  const showSubmit = status === 'upcoming' && cutoffOk
-
-  // Has this team already submitted for the selected round?
-  const hasSubmitted = storedTeam
-    ? !!(data.submittedLineups?.[selectedRound]?.[storedTeam]?.length)
-    : false
 
   return (
     <div className="rounds-screen">
@@ -173,23 +237,8 @@ export default function Rounds({ data, onMatchClick, onUpcomingMatchClick, onSub
         ))}
       </div>
 
-      <div className={`round-content${showSubmit ? ' with-submit' : ''}`}>
+      <div className="round-content">
         <RoundHeader roundNum={selectedRound} status={status} />
-
-        {/* Submitted lineup banner */}
-        {showSubmit && hasSubmitted && (
-          <div className="lineup-submitted-banner">
-            <span className="lineup-submitted-tick">✓</span>
-            <span className="lineup-submitted-text">
-              {storedTeam} lineup submitted
-            </span>
-            {selectedCutoff && (
-              <span className="lineup-submitted-cutoff">
-                {' · '}Closes {new Date(selectedCutoff).toLocaleDateString('en-AU', { weekday: 'short', hour: 'numeric', minute: '2-digit' })}
-              </span>
-            )}
-          </div>
-        )}
 
         {hasMatchData ? (
           <div className="match-list">
@@ -209,6 +258,7 @@ export default function Rounds({ data, onMatchClick, onUpcomingMatchClick, onSub
                 const homeSubmitted = !!(data.submittedLineups?.[selectedRound]?.[m.home]?.length)
                 const awaySubmitted = !!(data.submittedLineups?.[selectedRound]?.[m.away]?.length)
                 const isUserMatch = storedTeam === m.home || storedTeam === m.away
+                const userLineup = storedTeam ? (data.submittedLineups?.[selectedRound]?.[storedTeam] || []) : []
                 return (
                   <FixtureMatch
                     key={i}
@@ -216,6 +266,11 @@ export default function Rounds({ data, onMatchClick, onUpcomingMatchClick, onSub
                     homeSubmitted={homeSubmitted}
                     awaySubmitted={awaySubmitted}
                     isUserMatch={isUserMatch}
+                    userTeam={storedTeam}
+                    userLineup={userLineup}
+                    cutoffOk={cutoffOk}
+                    onSubmitLineup={onSubmitLineup}
+                    roundNum={selectedRound}
                     onClick={() => onUpcomingMatchClick?.(m, selectedRound)}
                   />
                 )
@@ -229,11 +284,6 @@ export default function Rounds({ data, onMatchClick, onUpcomingMatchClick, onSub
         )}
       </div>
 
-      {showSubmit && (
-        <button className="submit-lineup-btn" onClick={() => onSubmitLineup(selectedRound)}>
-          {hasSubmitted ? `Edit Lineup · Round ${selectedRound}` : `Submit Lineup for Round ${selectedRound} →`}
-        </button>
-      )}
     </div>
   )
 }

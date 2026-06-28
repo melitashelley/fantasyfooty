@@ -346,16 +346,19 @@
 .all-scored-text { color: var(--text-secondary); }
 
 /* ─── Fixture Matches (Future rounds) ────────────────────────────── */
+.fixture-card {
+  border-bottom: 1px solid var(--border);
+}
+
+.fixture-card:last-child { border-bottom: none; }
+
 .fixture-match {
   display: flex;
   align-items: center;
   padding: 11px 0;
-  border-bottom: 1px solid var(--border);
   font-size: 14px;
   color: var(--text-secondary);
 }
-
-.fixture-match:last-child { border-bottom: none; }
 
 .fixture-match--clickable {
   cursor: pointer;
@@ -397,6 +400,65 @@
 .fixture-not-submitted {
   font-size: 11px;
   color: var(--text-secondary);
+}
+
+.fixture-submit-link {
+  background: none;
+  border: none;
+  font-family: inherit;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--green);
+  cursor: pointer;
+  padding: 0;
+  text-align: inherit;
+}
+
+.fixture-user-actions {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.fixture-action-sep {
+  font-size: 11px;
+  color: var(--text-secondary);
+}
+
+.fixture-lineup-expanded {
+  padding: 8px 0 4px;
+  border-top: 1px solid var(--border);
+}
+
+.fixture-lineup-pos-header {
+  font-size: 10px;
+  font-weight: 700;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 6px 0 2px;
+}
+
+.fixture-lineup-player {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3px 0;
+  font-size: 13px;
+  color: var(--text-primary);
+}
+
+.fixture-lineup-player.is-sub {
+  color: var(--text-secondary);
+}
+
+.fixture-lineup-sub-tag {
+  font-size: 10px;
+  color: var(--text-secondary);
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-pill);
+  padding: 1px 5px;
 }
 
 /* ─── Lineup submitted banner (rounds screen) ───────────────────── */
