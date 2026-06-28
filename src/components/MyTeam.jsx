@@ -165,7 +165,10 @@ export default function MyTeam({ data, onNextMatchClick, onChangeTeam }) {
   return (
     <div className="myteam-screen">
       <div className="screen-header">
-        <h1>{storedTeam}</h1>
+        <div className="screen-header-top">
+          <h1>{storedTeam}</h1>
+          <button className="change-team-btn" onClick={onChangeTeam}>Change team</button>
+        </div>
         <p className="subtitle">Deloitte Tax Fantasy AFL 2026</p>
       </div>
 
@@ -205,13 +208,6 @@ export default function MyTeam({ data, onNextMatchClick, onChangeTeam }) {
           </button>
         </div>
       )}
-
-      {/* Change team */}
-      <div style={{ padding: '0 16px' }}>
-        <button className="change-team-btn" onClick={onChangeTeam}>
-          Change team
-        </button>
-      </div>
 
       {/* Squad */}
       <div className="myteam-section">
