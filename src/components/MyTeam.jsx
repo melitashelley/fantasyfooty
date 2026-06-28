@@ -80,7 +80,7 @@ function PlayerRow({ player, seasonTotal, earnedTotal, matches }) {
   )
 }
 
-export default function MyTeam({ data, onNextMatchClick }) {
+export default function MyTeam({ data, onNextMatchClick, onChangeTeam }) {
   const storedCode = typeof localStorage !== 'undefined' ? localStorage.getItem('ff_team_code') : null
   const storedTeam = storedCode ? data.teamCodes?.[storedCode] : null
 
@@ -205,6 +205,13 @@ export default function MyTeam({ data, onNextMatchClick }) {
           </button>
         </div>
       )}
+
+      {/* Change team */}
+      <div style={{ padding: '0 16px' }}>
+        <button className="change-team-btn" onClick={onChangeTeam}>
+          Change team
+        </button>
+      </div>
 
       {/* Squad */}
       <div className="myteam-section">

@@ -1,0 +1,6578 @@
+{
+  "season": 2026,
+  "currentRound": 16,
+  "finalsPositions": 5,
+  "teams": [
+    "Wando Cans",
+    "Bullants",
+    "Party Pies",
+    "Mighty Squirrels",
+    "Cobras",
+    "The Foxes",
+    "Bloods",
+    "Punters",
+    "Sprocket Heads",
+    "Strucks"
+  ],
+  "fixture": [
+    {
+      "round": 1,
+      "matches": [
+        {
+          "home": "Party Pies",
+          "away": "Strucks"
+        },
+        {
+          "home": "The Foxes",
+          "away": "Wando Cans"
+        },
+        {
+          "home": "Mighty Squirrels",
+          "away": "Bloods"
+        },
+        {
+          "home": "Sprocket Heads",
+          "away": "Bullants"
+        },
+        {
+          "home": "Cobras",
+          "away": "Punters"
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "matches": [
+        {
+          "home": "Strucks",
+          "away": "Party Pies"
+        },
+        {
+          "home": "Bloods",
+          "away": "Sprocket Heads"
+        },
+        {
+          "home": "Bullants",
+          "away": "Wando Cans"
+        },
+        {
+          "home": "Punters",
+          "away": "Mighty Squirrels"
+        },
+        {
+          "home": "Wando Cans",
+          "away": "The Foxes"
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "matches": [
+        {
+          "home": "Cobras",
+          "away": "Party Pies"
+        },
+        {
+          "home": "Bullants",
+          "away": "Bloods"
+        },
+        {
+          "home": "Sprocket Heads",
+          "away": "Wando Cans"
+        },
+        {
+          "home": "The Foxes",
+          "away": "Mighty Squirrels"
+        },
+        {
+          "home": "Punters",
+          "away": "Strucks"
+        }
+      ]
+    },
+    {
+      "round": 4,
+      "matches": [
+        {
+          "home": "Party Pies",
+          "away": "Bloods"
+        },
+        {
+          "home": "Sprocket Heads",
+          "away": "The Foxes"
+        },
+        {
+          "home": "Strucks",
+          "away": "Cobras"
+        },
+        {
+          "home": "Mighty Squirrels",
+          "away": "Punters"
+        },
+        {
+          "home": "Wando Cans",
+          "away": "Bullants"
+        }
+      ]
+    },
+    {
+      "round": 5,
+      "matches": [
+        {
+          "home": "Bloods",
+          "away": "Party Pies"
+        },
+        {
+          "home": "The Foxes",
+          "away": "Sprocket Heads"
+        },
+        {
+          "home": "Cobras",
+          "away": "Mighty Squirrels"
+        },
+        {
+          "home": "Punters",
+          "away": "Wando Cans"
+        },
+        {
+          "home": "Bullants",
+          "away": "Strucks"
+        }
+      ]
+    },
+    {
+      "round": 6,
+      "matches": [
+        {
+          "home": "Strucks",
+          "away": "The Foxes"
+        },
+        {
+          "home": "Party Pies",
+          "away": "Bullants"
+        },
+        {
+          "home": "Wando Cans",
+          "away": "Cobras"
+        },
+        {
+          "home": "Mighty Squirrels",
+          "away": "Sprocket Heads"
+        },
+        {
+          "home": "Bloods",
+          "away": "Punters"
+        }
+      ]
+    },
+    {
+      "round": 7,
+      "matches": [
+        {
+          "home": "Mighty Squirrels",
+          "away": "Cobras"
+        },
+        {
+          "home": "Bullants",
+          "away": "Strucks"
+        },
+        {
+          "home": "Sprocket Heads",
+          "away": "Party Pies"
+        },
+        {
+          "home": "Wando Cans",
+          "away": "Bloods"
+        },
+        {
+          "home": "Punters",
+          "away": "The Foxes"
+        }
+      ]
+    },
+    {
+      "round": 8,
+      "matches": [
+        {
+          "home": "Strucks",
+          "away": "Mighty Squirrels"
+        },
+        {
+          "home": "Cobras",
+          "away": "Bullants"
+        },
+        {
+          "home": "Punters",
+          "away": "Sprocket Heads"
+        },
+        {
+          "home": "Party Pies",
+          "away": "The Foxes"
+        },
+        {
+          "home": "Bloods",
+          "away": "Wando Cans"
+        }
+      ]
+    },
+    {
+      "round": 9,
+      "matches": [
+        {
+          "home": "Sprocket Heads",
+          "away": "Strucks"
+        },
+        {
+          "home": "The Foxes",
+          "away": "Bullants"
+        },
+        {
+          "home": "Mighty Squirrels",
+          "away": "Wando Cans"
+        },
+        {
+          "home": "Cobras",
+          "away": "Bloods"
+        },
+        {
+          "home": "Party Pies",
+          "away": "Punters"
+        }
+      ]
+    },
+    {
+      "round": 10,
+      "matches": [
+        {
+          "home": "Strucks",
+          "away": "Cobras"
+        },
+        {
+          "home": "Wando Cans",
+          "away": "Party Pies"
+        },
+        {
+          "home": "Bloods",
+          "away": "Mighty Squirrels"
+        },
+        {
+          "home": "Bullants",
+          "away": "Sprocket Heads"
+        },
+        {
+          "home": "Punters",
+          "away": "The Foxes"
+        }
+      ]
+    },
+    {
+      "round": 11,
+      "matches": [
+        {
+          "home": "Mighty Squirrels",
+          "away": "Strucks"
+        },
+        {
+          "home": "The Foxes",
+          "away": "Bloods"
+        },
+        {
+          "home": "Cobras",
+          "away": "Bullants"
+        },
+        {
+          "home": "Sprocket Heads",
+          "away": "Punters"
+        },
+        {
+          "home": "Party Pies",
+          "away": "Wando Cans"
+        }
+      ]
+    },
+    {
+      "round": 12,
+      "matches": [
+        {
+          "home": "Party Pies",
+          "away": "Cobras"
+        },
+        {
+          "home": "Bloods",
+          "away": "Bullants"
+        },
+        {
+          "home": "Wando Cans",
+          "away": "Sprocket Heads"
+        },
+        {
+          "home": "Mighty Squirrels",
+          "away": "The Foxes"
+        },
+        {
+          "home": "Strucks",
+          "away": "Punters"
+        }
+      ]
+    },
+    {
+      "round": 13,
+      "matches": [
+        {
+          "home": "Bloods",
+          "away": "The Foxes"
+        },
+        {
+          "home": "Punters",
+          "away": "Cobras"
+        },
+        {
+          "home": "Cobras",
+          "away": "Wando Cans"
+        },
+        {
+          "home": "Wando Cans",
+          "away": "Mighty Squirrels"
+        },
+        {
+          "home": "Bullants",
+          "away": "Party Pies"
+        }
+      ]
+    },
+    {
+      "round": 14,
+      "matches": [
+        {
+          "home": "Strucks",
+          "away": "Bloods"
+        },
+        {
+          "home": "Party Pies",
+          "away": "The Foxes"
+        },
+        {
+          "home": "Sprocket Heads",
+          "away": "Cobras"
+        },
+        {
+          "home": "Wando Cans",
+          "away": "Punters"
+        },
+        {
+          "home": "Mighty Squirrels",
+          "away": "Bullants"
+        }
+      ]
+    },
+    {
+      "round": 15,
+      "matches": [
+        {
+          "home": "The Foxes",
+          "away": "Strucks"
+        },
+        {
+          "home": "Bullants",
+          "away": "Party Pies"
+        },
+        {
+          "home": "Cobras",
+          "away": "Wando Cans"
+        },
+        {
+          "home": "Sprocket Heads",
+          "away": "Mighty Squirrels"
+        },
+        {
+          "home": "Punters",
+          "away": "Bloods"
+        }
+      ]
+    },
+    {
+      "round": 16,
+      "matches": [
+        {
+          "home": "Bullants",
+          "away": "Strucks"
+        },
+        {
+          "home": "The Foxes",
+          "away": "Punters"
+        },
+        {
+          "home": "Party Pies",
+          "away": "Sprocket Heads"
+        },
+        {
+          "home": "Bloods",
+          "away": "Wando Cans"
+        },
+        {
+          "home": "Mighty Squirrels",
+          "away": "Cobras"
+        }
+      ]
+    },
+    {
+      "round": 17,
+      "matches": [
+        {
+          "home": "Wando Cans",
+          "away": "Strucks"
+        },
+        {
+          "home": "The Foxes",
+          "away": "Cobras"
+        },
+        {
+          "home": "Bullants",
+          "away": "Punters"
+        },
+        {
+          "home": "Mighty Squirrels",
+          "away": "Party Pies"
+        },
+        {
+          "home": "Sprocket Heads",
+          "away": "Bloods"
+        }
+      ]
+    },
+    {
+      "round": 18,
+      "matches": [
+        {
+          "home": "Strucks",
+          "away": "Wando Cans"
+        },
+        {
+          "home": "Bloods",
+          "away": "Bullants"
+        },
+        {
+          "home": "Wando Cans",
+          "away": "Mighty Squirrels"
+        },
+        {
+          "home": "Punters",
+          "away": "Bloods"
+        },
+        {
+          "home": "Sprocket Heads",
+          "away": "Punters"
+        }
+      ]
+    }
+  ],
+  "rounds": [
+    {
+      "round": 9,
+      "status": "complete",
+      "ladder": [
+        {
+          "rank": 1,
+          "team": "The Foxes",
+          "points": 24,
+          "wins": 6,
+          "for": 3146,
+          "against": 2975,
+          "percentage": 105.7
+        },
+        {
+          "rank": 2,
+          "team": "Mighty Squirrels",
+          "points": 20,
+          "wins": 5,
+          "for": 3223,
+          "against": 3098,
+          "percentage": 104.0
+        },
+        {
+          "rank": 3,
+          "team": "Party Pies",
+          "points": 20,
+          "wins": 5,
+          "for": 3008,
+          "against": 3093,
+          "percentage": 97.3
+        },
+        {
+          "rank": 4,
+          "team": "Cobras",
+          "points": 16,
+          "wins": 4,
+          "for": 3253,
+          "against": 3192,
+          "percentage": 101.9
+        },
+        {
+          "rank": 5,
+          "team": "Bullants",
+          "points": 16,
+          "wins": 4,
+          "for": 3152,
+          "against": 3136,
+          "percentage": 100.5
+        },
+        {
+          "rank": 6,
+          "team": "Punters",
+          "points": 16,
+          "wins": 4,
+          "for": 3019,
+          "against": 3096,
+          "percentage": 97.5
+        },
+        {
+          "rank": 7,
+          "team": "Wando Cans",
+          "points": 16,
+          "wins": 4,
+          "for": 3018,
+          "against": 2955,
+          "percentage": 102.1
+        },
+        {
+          "rank": 8,
+          "team": "Strucks",
+          "points": 16,
+          "wins": 4,
+          "for": 2993,
+          "against": 3066,
+          "percentage": 97.6
+        },
+        {
+          "rank": 9,
+          "team": "Sprocket Heads",
+          "points": 8,
+          "wins": 2,
+          "for": 3059,
+          "against": 3111,
+          "percentage": 98.3
+        },
+        {
+          "rank": 10,
+          "team": "Bloods",
+          "points": 8,
+          "wins": 2,
+          "for": 2838,
+          "against": 2987,
+          "percentage": 95.0
+        }
+      ],
+      "matches": [
+        {
+          "home": "Bullants",
+          "homeScore": 0,
+          "away": "The Foxes",
+          "awayScore": 47,
+          "winner": "The Foxes",
+          "homePlayers": [
+            {
+              "name": "Mac Andrew",
+              "position": "Defender",
+              "priority": 1,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Josh Daicos",
+              "position": "Defender",
+              "priority": 2,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Dan Houston",
+              "position": "Defender",
+              "priority": 3,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Nick Blakey",
+              "position": "Defender",
+              "priority": 4,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Caleb Daniel",
+              "position": "Defender",
+              "priority": 5,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Sam Walsh",
+              "position": "Midfielder",
+              "priority": 1,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Luke Davies-Uniacke",
+              "position": "Midfielder",
+              "priority": 2,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Touk Miller",
+              "position": "Midfielder",
+              "priority": 3,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Harley Reid",
+              "position": "Midfielder",
+              "priority": 4,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Steele Sidebottom",
+              "position": "Midfielder",
+              "priority": 5,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Elijah Tsatas",
+              "position": "Midfielder",
+              "priority": 6,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Jordan De Goey",
+              "position": "Forward",
+              "priority": 1,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Christian Petracca",
+              "position": "Forward",
+              "priority": 2,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Toby Greene",
+              "position": "Forward",
+              "priority": 3,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Patrick Dangerfield",
+              "position": "Forward",
+              "priority": 4,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Beau McCreery",
+              "position": "Forward",
+              "priority": 5,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Brent Daniels",
+              "position": "Forward",
+              "priority": 6,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Jarrod Witts",
+              "position": "Ruck",
+              "priority": 0,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Sam Draper",
+              "position": "Ruck",
+              "priority": 1,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Rhys Stanley",
+              "position": "Ruck",
+              "priority": 2,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            }
+          ],
+          "awayPlayers": [
+            {
+              "name": "Archie Roberts",
+              "position": "Defender",
+              "priority": 1,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Colby McKercher",
+              "position": "Defender",
+              "priority": 2,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Wayne Milera",
+              "position": "Defender",
+              "priority": 3,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Finn O'Sullivan",
+              "position": "Defender",
+              "priority": 4,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Jacob Farrow",
+              "position": "Defender",
+              "priority": 5,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Connor Rozee",
+              "position": "Defender",
+              "priority": 6,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Will Ashcroft",
+              "position": "Midfielder",
+              "priority": 1,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Ed Richards",
+              "position": "Midfielder",
+              "priority": 2,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Hayden Young",
+              "position": "Midfielder",
+              "priority": 3,
+              "score": 30,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "George Wardlaw",
+              "position": "Midfielder",
+              "priority": 4,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Josh Ward",
+              "position": "Midfielder",
+              "priority": 5,
+              "score": 30,
+              "isSub": true,
+              "subActivated": true
+            },
+            {
+              "name": "Harry Rowston",
+              "position": "Midfielder",
+              "priority": 6,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Sam Cumming",
+              "position": "Midfielder",
+              "priority": 7,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Josh Rachele",
+              "position": "Forward",
+              "priority": 1,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Connor MacDonald",
+              "position": "Forward",
+              "priority": 2,
+              "score": 17,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Aaron Cadman",
+              "position": "Forward",
+              "priority": 3,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Bailey Humphrey",
+              "position": "Forward",
+              "priority": 4,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Cooper Trembath",
+              "position": "Forward",
+              "priority": 5,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Sam Lalor",
+              "position": "Forward",
+              "priority": 6,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Max Gawn",
+              "position": "Ruck",
+              "priority": 1,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Dante Visentini",
+              "position": "Ruck",
+              "priority": 2,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Lachlan Smith",
+              "position": "Ruck",
+              "priority": 3,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            }
+          ]
+        },
+        {
+          "home": "Party Pies",
+          "homeScore": 62,
+          "away": "Punters",
+          "awayScore": 36,
+          "winner": "Party Pies",
+          "homePlayers": [
+            {
+              "name": "Jack Sinclair",
+              "position": "Defender",
+              "priority": 1,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Dayne Zorko",
+              "position": "Defender",
+              "priority": 2,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Jarman Impey",
+              "position": "Defender",
+              "priority": 3,
+              "score": 31,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Nic Newman",
+              "position": "Defender",
+              "priority": 4,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Conor Nash",
+              "position": "Defender",
+              "priority": 5,
+              "score": 25,
+              "isSub": true,
+              "subActivated": true
+            },
+            {
+              "name": "Connor Idun",
+              "position": "Defender",
+              "priority": 6,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Andrew Brayshaw",
+              "position": "Midfielder",
+              "priority": 1,
+              "score": 31,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Tim Taranto",
+              "position": "Midfielder",
+              "priority": 2,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Jack Steele",
+              "position": "Midfielder",
+              "priority": 3,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Luke Parker",
+              "position": "Midfielder",
+              "priority": 4,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Elliot Yeo",
+              "position": "Midfielder",
+              "priority": 5,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Scott Pendlebury",
+              "position": "Midfielder",
+              "priority": 6,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Darcy Parish",
+              "position": "Midfielder",
+              "priority": 7,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Jack Graham",
+              "position": "Forward",
+              "priority": 0,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Adam Treloar",
+              "position": "Forward",
+              "priority": 0,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Sam Flanders",
+              "position": "Forward",
+              "priority": 1,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Logan Morris",
+              "position": "Forward",
+              "priority": 2,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "James Peatling",
+              "position": "Forward",
+              "priority": 3,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Shaun Mannagh",
+              "position": "Forward",
+              "priority": 4,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Oscar Steene",
+              "position": "Forward",
+              "priority": 5,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Kieren Briggs",
+              "position": "Ruck",
+              "priority": 0,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Matt Flynn",
+              "position": "Ruck",
+              "priority": 0,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Rowan Marshall",
+              "position": "Ruck",
+              "priority": 1,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Marc Pittonet",
+              "position": "Ruck",
+              "priority": 2,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            }
+          ],
+          "awayPlayers": [
+            {
+              "name": "Bailey Williams",
+              "position": "Defender",
+              "priority": 1,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Callum Mills",
+              "position": "Defender",
+              "priority": 2,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Wil Powell",
+              "position": "Defender",
+              "priority": 3,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Riley Bice",
+              "position": "Defender",
+              "priority": 4,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Joel Jeffrey",
+              "position": "Defender",
+              "priority": 5,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Jaspa Fletcher",
+              "position": "Defender",
+              "priority": 6,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Zak Butters",
+              "position": "Midfielder",
+              "priority": 1,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Clayton Oliver",
+              "position": "Midfielder",
+              "priority": 2,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Matthew Kennedy",
+              "position": "Midfielder",
+              "priority": 3,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Hugh McCluggage",
+              "position": "Midfielder",
+              "priority": 4,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Patrick Cripps",
+              "position": "Midfielder",
+              "priority": 5,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Hugo Garcia",
+              "position": "Midfielder",
+              "priority": 6,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Jagga Smith",
+              "position": "Midfielder",
+              "priority": 7,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Bailey J. Williams",
+              "position": "Forward",
+              "priority": 1,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Ryley Sanders",
+              "position": "Forward",
+              "priority": 2,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Josh Treacy",
+              "position": "Forward",
+              "priority": 3,
+              "score": 36,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Mitch Georgiades",
+              "position": "Forward",
+              "priority": 4,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Murphy Reid",
+              "position": "Forward",
+              "priority": 5,
+              "score": 26,
+              "isSub": true,
+              "subActivated": true
+            },
+            {
+              "name": "Jy Simpkin",
+              "position": "Forward",
+              "priority": 6,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Charlie Curnow",
+              "position": "Forward",
+              "priority": 7,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Nicholas Madden",
+              "position": "Ruck",
+              "priority": 0,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Lachlan McAndrew",
+              "position": "Ruck",
+              "priority": 1,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Tristan Xerri",
+              "position": "Ruck",
+              "priority": 2,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Reilly O'Brien",
+              "position": "Ruck",
+              "priority": 3,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            }
+          ]
+        },
+        {
+          "home": "Bloods",
+          "homeScore": 0,
+          "away": "Cobras",
+          "awayScore": 59,
+          "winner": "Cobras",
+          "homePlayers": [
+            {
+              "name": "Trent Rivers",
+              "position": "Defender",
+              "priority": 0,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Josh Worrell",
+              "position": "Defender",
+              "priority": 1,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Miles Bergman",
+              "position": "Defender",
+              "priority": 2,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Bodhi Uwland",
+              "position": "Defender",
+              "priority": 3,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Tom Stewart",
+              "position": "Defender",
+              "priority": 4,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Liam Duggan",
+              "position": "Defender",
+              "priority": 5,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Noah Anderson",
+              "position": "Midfielder",
+              "priority": 1,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Max Holmes",
+              "position": "Midfielder",
+              "priority": 2,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Finn Callaghan",
+              "position": "Midfielder",
+              "priority": 3,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Tom Atkins",
+              "position": "Midfielder",
+              "priority": 4,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Bruce Reville",
+              "position": "Midfielder",
+              "priority": 5,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "James Rowbottom",
+              "position": "Midfielder",
+              "priority": 6,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Dylan Stephens",
+              "position": "Midfielder",
+              "priority": 7,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Harry Sheezel",
+              "position": "Forward",
+              "priority": 1,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Izak Rankine",
+              "position": "Forward",
+              "priority": 2,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Oliver Dempsey",
+              "position": "Forward",
+              "priority": 3,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Levi Ashcroft",
+              "position": "Forward",
+              "priority": 4,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Mattaes Phillipou",
+              "position": "Forward",
+              "priority": 5,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Max King",
+              "position": "Forward",
+              "priority": 6,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Liam Reidy",
+              "position": "Ruck",
+              "priority": 0,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Ned Moyle",
+              "position": "Ruck",
+              "priority": 1,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Ned Reeves",
+              "position": "Ruck",
+              "priority": 2,
+              "score": 22,
+              "isSub": true,
+              "subActivated": true
+            },
+            {
+              "name": "Lloyd Meek",
+              "position": "Ruck",
+              "priority": 3,
+              "score": 40,
+              "isSub": true,
+              "subActivated": true
+            }
+          ],
+          "awayPlayers": [
+            {
+              "name": "Nasiah Wanganeen-Milera",
+              "position": "Defender",
+              "priority": 1,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Tom McCarthy",
+              "position": "Defender",
+              "priority": 2,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Bailey Dale",
+              "position": "Defender",
+              "priority": 3,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Will Setterfield",
+              "position": "Defender",
+              "priority": 4,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Josh Weddle",
+              "position": "Defender",
+              "priority": 5,
+              "score": 21,
+              "isSub": true,
+              "subActivated": true
+            },
+            {
+              "name": "Marcus Bontempelli",
+              "position": "Midfielder",
+              "priority": 1,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Jordan Dawson",
+              "position": "Midfielder",
+              "priority": 2,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Zach Merrett",
+              "position": "Midfielder",
+              "priority": 3,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Jack Crisp",
+              "position": "Midfielder",
+              "priority": 4,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Harvey Langford",
+              "position": "Midfielder",
+              "priority": 5,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Willem Drew",
+              "position": "Midfielder",
+              "priority": 6,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "James Worpel",
+              "position": "Midfielder",
+              "priority": 7,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Will Day",
+              "position": "Midfielder",
+              "priority": 8,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Justin McInerney",
+              "position": "Forward",
+              "priority": 1,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Jake Riccardi",
+              "position": "Forward",
+              "priority": 2,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Aaron Naughton",
+              "position": "Forward",
+              "priority": 3,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Ben King",
+              "position": "Forward",
+              "priority": 4,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Harry McKay",
+              "position": "Forward",
+              "priority": 5,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Sean Darcy",
+              "position": "Ruck",
+              "priority": 0,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Luke Jackson",
+              "position": "Ruck",
+              "priority": 1,
+              "score": 59,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Mitchell Edwards",
+              "position": "Ruck",
+              "priority": 2,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            }
+          ]
+        },
+        {
+          "home": "Mighty Squirrels",
+          "homeScore": 56,
+          "away": "Wando Cans",
+          "awayScore": 54,
+          "winner": "Mighty Squirrels",
+          "homePlayers": [
+            {
+              "name": "Lachie Ash",
+              "position": "Defender",
+              "priority": 1,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "John Noble",
+              "position": "Defender",
+              "priority": 2,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Matt Roberts",
+              "position": "Defender",
+              "priority": 3,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Mason Redman",
+              "position": "Defender",
+              "priority": 4,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Keidean Coleman",
+              "position": "Defender",
+              "priority": 5,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Brayden Maynard",
+              "position": "Defender",
+              "priority": 6,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Tom Liberatore",
+              "position": "Midfielder",
+              "priority": 0,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Jai Newcombe",
+              "position": "Midfielder",
+              "priority": 1,
+              "score": 28,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Josh Dunkley",
+              "position": "Midfielder",
+              "priority": 2,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "George Hewett",
+              "position": "Midfielder",
+              "priority": 3,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Tanner Bruhn",
+              "position": "Midfielder",
+              "priority": 4,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Angus Sheldrick",
+              "position": "Midfielder",
+              "priority": 5,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Jack Macrae",
+              "position": "Midfielder",
+              "priority": 6,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Peter Ladhams",
+              "position": "Forward",
+              "priority": 0,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Nick Watson",
+              "position": "Forward",
+              "priority": 1,
+              "score": 28,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Kysaiah Pickett",
+              "position": "Forward",
+              "priority": 2,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Zac Bailey",
+              "position": "Forward",
+              "priority": 3,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Ed Langdon",
+              "position": "Forward",
+              "priority": 4,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Joel Freijah",
+              "position": "Forward",
+              "priority": 5,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Darcy Wilson",
+              "position": "Forward",
+              "priority": 6,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Vigo Visentini",
+              "position": "Ruck",
+              "priority": 0,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Brodie Grundy",
+              "position": "Ruck",
+              "priority": 1,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Darcy Fort",
+              "position": "Ruck",
+              "priority": 2,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            }
+          ],
+          "awayPlayers": [
+            {
+              "name": "James Sicily",
+              "position": "Defender",
+              "priority": 1,
+              "score": 33,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Rory Laird",
+              "position": "Defender",
+              "priority": 2,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Jase Burgoyne",
+              "position": "Defender",
+              "priority": 3,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Oliver Florent",
+              "position": "Defender",
+              "priority": 4,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Andrew McGrath",
+              "position": "Defender",
+              "priority": 5,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Oliver Hollands",
+              "position": "Defender",
+              "priority": 6,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Jake Bowey",
+              "position": "Defender",
+              "priority": 7,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Dion Prestia",
+              "position": "Midfielder",
+              "priority": 0,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Nick Daicos",
+              "position": "Midfielder",
+              "priority": 1,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Lachie Neale",
+              "position": "Midfielder",
+              "priority": 2,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Ollie Wines",
+              "position": "Midfielder",
+              "priority": 3,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Adam Cerra",
+              "position": "Midfielder",
+              "priority": 4,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Matt Rowell",
+              "position": "Midfielder",
+              "priority": 5,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Tom Powell",
+              "position": "Midfielder",
+              "priority": 6,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Stephen Coniglio",
+              "position": "Midfielder",
+              "priority": 7,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Peter Wright",
+              "position": "Forward",
+              "priority": 1,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Jack Ginnivan",
+              "position": "Forward",
+              "priority": 2,
+              "score": 21,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Jack Ross",
+              "position": "Forward",
+              "priority": 3,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Paul Curtis",
+              "position": "Forward",
+              "priority": 4,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Jake Waterman",
+              "position": "Forward",
+              "priority": 5,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Xavier Duursma",
+              "position": "Forward",
+              "priority": 6,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Tom De Koning",
+              "position": "Ruck",
+              "priority": 1,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Nick Bryan",
+              "position": "Ruck",
+              "priority": 2,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Samson Ryan",
+              "position": "Ruck",
+              "priority": 3,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Toby Nankervis",
+              "position": "Ruck",
+              "priority": 4,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            }
+          ]
+        },
+        {
+          "home": "Sprocket Heads",
+          "homeScore": 81,
+          "away": "Strucks",
+          "awayScore": 65,
+          "winner": "Sprocket Heads",
+          "homePlayers": [
+            {
+              "name": "Lachie Whitfield",
+              "position": "Defender",
+              "priority": 1,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Jordan Clark",
+              "position": "Defender",
+              "priority": 2,
+              "score": 24,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Callum Wilkie",
+              "position": "Defender",
+              "priority": 3,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Kane Farrell",
+              "position": "Defender",
+              "priority": 4,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Nick Haynes",
+              "position": "Defender",
+              "priority": 5,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Zach Guthrie",
+              "position": "Defender",
+              "priority": 6,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Bailey Smith",
+              "position": "Midfielder",
+              "priority": 1,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Jye Caldwell",
+              "position": "Midfielder",
+              "priority": 2,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Caleb Serong",
+              "position": "Midfielder",
+              "priority": 3,
+              "score": 37,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Sam Berry",
+              "position": "Midfielder",
+              "priority": 4,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Cam Mackenzie",
+              "position": "Midfielder",
+              "priority": 5,
+              "score": 24,
+              "isSub": true,
+              "subActivated": true
+            },
+            {
+              "name": "Milan Murdock",
+              "position": "Midfielder",
+              "priority": 6,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Jacob Hopper",
+              "position": "Midfielder",
+              "priority": 7,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Jeremy Cameron",
+              "position": "Forward",
+              "priority": 1,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Dylan Moore",
+              "position": "Forward",
+              "priority": 2,
+              "score": 20,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Bradley Hill",
+              "position": "Forward",
+              "priority": 3,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Tim Kelly",
+              "position": "Forward",
+              "priority": 4,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Mitch Lewis",
+              "position": "Forward",
+              "priority": 5,
+              "score": 30,
+              "isSub": true,
+              "subActivated": true
+            },
+            {
+              "name": "Alex Neal-Bullen",
+              "position": "Forward",
+              "priority": 6,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Gryan Miers",
+              "position": "Forward",
+              "priority": 7,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Darcy Cameron",
+              "position": "Ruck",
+              "priority": 1,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Mark Blicavs",
+              "position": "Ruck",
+              "priority": 2,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            }
+          ],
+          "awayPlayers": [
+            {
+              "name": "Jayden Short",
+              "position": "Defender",
+              "priority": 1,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Darcy Wilmot",
+              "position": "Defender",
+              "priority": 2,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Karl Amon",
+              "position": "Defender",
+              "priority": 3,
+              "score": 40,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Luke Ryan",
+              "position": "Defender",
+              "priority": 4,
+              "score": 25,
+              "isSub": true,
+              "subActivated": true
+            },
+            {
+              "name": "Lawson Humphries",
+              "position": "Defender",
+              "priority": 5,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Jack Bowes",
+              "position": "Defender",
+              "priority": 6,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Liam Baker",
+              "position": "Defender",
+              "priority": 7,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Jarrod Berry",
+              "position": "Midfielder",
+              "priority": 0,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Errol Gulden",
+              "position": "Midfielder",
+              "priority": 0,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Isaac Heeney",
+              "position": "Midfielder",
+              "priority": 1,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Chad Warner",
+              "position": "Midfielder",
+              "priority": 2,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Marcus Windhager",
+              "position": "Midfielder",
+              "priority": 3,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Sam Durham",
+              "position": "Midfielder",
+              "priority": 4,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Massimo D'Ambrosio",
+              "position": "Midfielder",
+              "priority": 5,
+              "score": 18,
+              "isSub": true,
+              "subActivated": true
+            },
+            {
+              "name": "Willem Duursma",
+              "position": "Midfielder",
+              "priority": 6,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Riley Thilthorpe",
+              "position": "Forward",
+              "priority": 1,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Jason Horne-Francis",
+              "position": "Forward",
+              "priority": 2,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Shai Bolton",
+              "position": "Forward",
+              "priority": 3,
+              "score": 25,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Jack Gunston",
+              "position": "Forward",
+              "priority": 4,
+              "score": 51,
+              "isSub": true,
+              "subActivated": true
+            },
+            {
+              "name": "Max Hall",
+              "position": "Forward",
+              "priority": 5,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Shannon Neale",
+              "position": "Forward",
+              "priority": 6,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Tim English",
+              "position": "Ruck",
+              "priority": 1,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Jordon Sweet",
+              "position": "Ruck",
+              "priority": 2,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Louis Emmett",
+              "position": "Ruck",
+              "priority": 3,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "round": 15,
+      "status": "complete",
+      "ladder": [
+        {
+          "rank": 1,
+          "team": "Cobras",
+          "points": 40,
+          "wins": 10,
+          "for": 6106,
+          "against": 5790,
+          "percentage": 105.5
+        },
+        {
+          "rank": 2,
+          "team": "Mighty Squirrels",
+          "points": 40,
+          "wins": 10,
+          "for": 5761,
+          "against": 5579,
+          "percentage": 103.3
+        },
+        {
+          "rank": 3,
+          "team": "Strucks",
+          "points": 36,
+          "wins": 9,
+          "for": 5724,
+          "against": 5671,
+          "percentage": 100.9
+        },
+        {
+          "rank": 4,
+          "team": "The Foxes",
+          "points": 36,
+          "wins": 9,
+          "for": 5672,
+          "against": 5553,
+          "percentage": 102.1
+        },
+        {
+          "rank": 5,
+          "team": "Bullants",
+          "points": 32,
+          "wins": 8,
+          "for": 5783,
+          "against": 5761,
+          "percentage": 100.4
+        },
+        {
+          "rank": 6,
+          "team": "Punters",
+          "points": 32,
+          "wins": 8,
+          "for": 5724,
+          "against": 5789,
+          "percentage": 98.9
+        },
+        {
+          "rank": 7,
+          "team": "Wando Cans",
+          "points": 32,
+          "wins": 8,
+          "for": 5637,
+          "against": 5600,
+          "percentage": 100.7
+        },
+        {
+          "rank": 8,
+          "team": "Party Pies",
+          "points": 28,
+          "wins": 7,
+          "for": 5550,
+          "against": 5697,
+          "percentage": 97.4
+        },
+        {
+          "rank": 9,
+          "team": "Sprocket Heads",
+          "points": 12,
+          "wins": 3,
+          "for": 5497,
+          "against": 5712,
+          "percentage": 96.2
+        },
+        {
+          "rank": 10,
+          "team": "Bloods",
+          "points": 12,
+          "wins": 3,
+          "for": 5412,
+          "against": 5714,
+          "percentage": 94.7
+        }
+      ],
+      "matches": [
+        {
+          "home": "Bullants",
+          "homeScore": 395,
+          "away": "Party Pies",
+          "awayScore": 319,
+          "winner": "Bullants",
+          "homePlayers": [
+            {
+              "name": "Nick Blakey",
+              "position": "Defender",
+              "priority": 0,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Mac Andrew",
+              "position": "Defender",
+              "priority": 1,
+              "score": 39,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Josh Daicos",
+              "position": "Defender",
+              "priority": 2,
+              "score": 40,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Dan Houston",
+              "position": "Defender",
+              "priority": 3,
+              "score": 24,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Caleb Daniel",
+              "position": "Defender",
+              "priority": 4,
+              "score": 57,
+              "isSub": true,
+              "subActivated": true
+            },
+            {
+              "name": "Aliir Aliir",
+              "position": "Defender",
+              "priority": 5,
+              "score": 24,
+              "isSub": true,
+              "subActivated": true
+            },
+            {
+              "name": "Elijah Tsatas",
+              "position": "Midfielder",
+              "priority": 0,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Harley Reid",
+              "position": "Midfielder",
+              "priority": 0,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Sam Walsh",
+              "position": "Midfielder",
+              "priority": 1,
+              "score": 46,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Luke Davies-Uniacke",
+              "position": "Midfielder",
+              "priority": 2,
+              "score": 24,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Touk Miller",
+              "position": "Midfielder",
+              "priority": 3,
+              "score": 34,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Blake Acres",
+              "position": "Midfielder",
+              "priority": 4,
+              "score": 37,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Jordan De Goey",
+              "position": "Forward",
+              "priority": 1,
+              "score": 50,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Christian Petracca",
+              "position": "Forward",
+              "priority": 2,
+              "score": 38,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Toby Greene",
+              "position": "Forward",
+              "priority": 3,
+              "score": 36,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Brent Daniels",
+              "position": "Forward",
+              "priority": 4,
+              "score": 30,
+              "isSub": true,
+              "subActivated": true
+            },
+            {
+              "name": "Patrick Dangerfield",
+              "position": "Forward",
+              "priority": 5,
+              "score": 20,
+              "isSub": true,
+              "subActivated": true
+            },
+            {
+              "name": "Sam Draper",
+              "position": "Ruck",
+              "priority": 0,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Jarrod Witts",
+              "position": "Ruck",
+              "priority": 1,
+              "score": 27,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Rhys Stanley",
+              "position": "Ruck",
+              "priority": 2,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Max Heath",
+              "position": "Ruck",
+              "priority": 3,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            }
+          ],
+          "awayPlayers": [
+            {
+              "name": "Dayne Zorko",
+              "position": "Defender",
+              "priority": 0,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Tom McCartin",
+              "position": "Defender",
+              "priority": 0,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Jack Sinclair",
+              "position": "Defender",
+              "priority": 1,
+              "score": 1,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Nic Newman",
+              "position": "Defender",
+              "priority": 2,
+              "score": 37,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Jarman Impey",
+              "position": "Defender",
+              "priority": 3,
+              "score": 9,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Connor Idun",
+              "position": "Defender",
+              "priority": 4,
+              "score": 26,
+              "isSub": true,
+              "subActivated": true
+            },
+            {
+              "name": "Sam Banks",
+              "position": "Defender",
+              "priority": 5,
+              "score": 34,
+              "isSub": true,
+              "subActivated": true
+            },
+            {
+              "name": "Darcy Parish",
+              "position": "Midfielder",
+              "priority": 0,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Elliot Yeo",
+              "position": "Midfielder",
+              "priority": 0,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Andrew Brayshaw",
+              "position": "Midfielder",
+              "priority": 1,
+              "score": 51,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Tim Taranto",
+              "position": "Midfielder",
+              "priority": 2,
+              "score": 29,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Jack Steele",
+              "position": "Midfielder",
+              "priority": 3,
+              "score": 26,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Luke Parker",
+              "position": "Midfielder",
+              "priority": 4,
+              "score": 43,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Scott Pendlebury",
+              "position": "Midfielder",
+              "priority": 5,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Logan Morris",
+              "position": "Forward",
+              "priority": 0,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "James Peatling",
+              "position": "Forward",
+              "priority": 1,
+              "score": 20,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Ben Ainsworth",
+              "position": "Forward",
+              "priority": 2,
+              "score": 24,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Will Hayward",
+              "position": "Forward",
+              "priority": 3,
+              "score": 34,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Patrick Lipinski",
+              "position": "Forward",
+              "priority": 4,
+              "score": 30,
+              "isSub": true,
+              "subActivated": true
+            },
+            {
+              "name": "Shaun Mannagh",
+              "position": "Forward",
+              "priority": 5,
+              "score": 15,
+              "isSub": true,
+              "subActivated": true
+            },
+            {
+              "name": "Adam Treloar",
+              "position": "Forward",
+              "priority": 6,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Matt Flynn",
+              "position": "Ruck",
+              "priority": 0,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Lachlan McAndrew",
+              "position": "Ruck",
+              "priority": 1,
+              "score": 45,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Reilly O'Brien",
+              "position": "Ruck",
+              "priority": 2,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Rowan Marshall",
+              "position": "Ruck",
+              "priority": 3,
+              "score": 54,
+              "isSub": true,
+              "subActivated": true
+            }
+          ]
+        },
+        {
+          "home": "The Foxes",
+          "homeScore": 364,
+          "away": "Strucks",
+          "awayScore": 358,
+          "winner": "The Foxes",
+          "homePlayers": [
+            {
+              "name": "Wayne Milera",
+              "position": "Defender",
+              "priority": 1,
+              "score": 38,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Colby McKercher",
+              "position": "Defender",
+              "priority": 2,
+              "score": 29,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Joe Fonti",
+              "position": "Defender",
+              "priority": 3,
+              "score": 28,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Finn O'Sullivan",
+              "position": "Defender",
+              "priority": 4,
+              "score": 22,
+              "isSub": true,
+              "subActivated": true
+            },
+            {
+              "name": "Jacob Farrow",
+              "position": "Defender",
+              "priority": 5,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Jaxon Artemis",
+              "position": "Defender",
+              "priority": 6,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Archie Roberts",
+              "position": "Defender",
+              "priority": 7,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Will Ashcroft",
+              "position": "Midfielder",
+              "priority": 1,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Ed Richards",
+              "position": "Midfielder",
+              "priority": 2,
+              "score": 30,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Josh Ward",
+              "position": "Midfielder",
+              "priority": 3,
+              "score": 33,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Joel Fitzgerald",
+              "position": "Midfielder",
+              "priority": 4,
+              "score": 19,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Hayden Young",
+              "position": "Midfielder",
+              "priority": 5,
+              "score": 24,
+              "isSub": true,
+              "subActivated": true
+            },
+            {
+              "name": "George Wardlaw",
+              "position": "Midfielder",
+              "priority": 6,
+              "score": 32,
+              "isSub": true,
+              "subActivated": true
+            },
+            {
+              "name": "Nathan O'Driscoll",
+              "position": "Midfielder",
+              "priority": 7,
+              "score": 21,
+              "isSub": true,
+              "subActivated": true
+            },
+            {
+              "name": "Sam Cumming",
+              "position": "Midfielder",
+              "priority": 8,
+              "score": 30,
+              "isSub": true,
+              "subActivated": true
+            },
+            {
+              "name": "Josh Rachele",
+              "position": "Forward",
+              "priority": 1,
+              "score": 36,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Connor MacDonald",
+              "position": "Forward",
+              "priority": 2,
+              "score": 38,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Harvey Thomas",
+              "position": "Forward",
+              "priority": 3,
+              "score": 25,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Aaron Cadman",
+              "position": "Forward",
+              "priority": 4,
+              "score": 15,
+              "isSub": true,
+              "subActivated": true
+            },
+            {
+              "name": "Kyle Langford",
+              "position": "Forward",
+              "priority": 5,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Bailey Humphrey",
+              "position": "Forward",
+              "priority": 6,
+              "score": 22,
+              "isSub": true,
+              "subActivated": true
+            },
+            {
+              "name": "Max Gawn",
+              "position": "Ruck",
+              "priority": 1,
+              "score": 64,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Dante Visentini",
+              "position": "Ruck",
+              "priority": 2,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            }
+          ],
+          "awayPlayers": [
+            {
+              "name": "Karl Amon",
+              "position": "Defender",
+              "priority": 1,
+              "score": 35,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Jayden Short",
+              "position": "Defender",
+              "priority": 2,
+              "score": 33,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Jack Bowes",
+              "position": "Defender",
+              "priority": 3,
+              "score": 15,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Noah Balta",
+              "position": "Defender",
+              "priority": 4,
+              "score": 35,
+              "isSub": true,
+              "subActivated": true
+            },
+            {
+              "name": "Luke Ryan",
+              "position": "Defender",
+              "priority": 5,
+              "score": 29,
+              "isSub": true,
+              "subActivated": true
+            },
+            {
+              "name": "Lawson Humphries",
+              "position": "Defender",
+              "priority": 6,
+              "score": 32,
+              "isSub": true,
+              "subActivated": true
+            },
+            {
+              "name": "Darcy Wilmot",
+              "position": "Defender",
+              "priority": 7,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Marcus Windhager",
+              "position": "Midfielder",
+              "priority": 1,
+              "score": 43,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Massimo D'Ambrosio",
+              "position": "Midfielder",
+              "priority": 2,
+              "score": 20,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Tom Atkins",
+              "position": "Midfielder",
+              "priority": 3,
+              "score": 24,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Neil Erasmus",
+              "position": "Midfielder",
+              "priority": 4,
+              "score": 34,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Isaac Heeney",
+              "position": "Midfielder",
+              "priority": 5,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Chad Warner",
+              "position": "Midfielder",
+              "priority": 6,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Errol Gulden",
+              "position": "Midfielder",
+              "priority": 7,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Willem Duursma",
+              "position": "Midfielder",
+              "priority": 8,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Jason Horne-Francis",
+              "position": "Forward",
+              "priority": 1,
+              "score": 44,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Max Hall",
+              "position": "Forward",
+              "priority": 2,
+              "score": 27,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Shai Bolton",
+              "position": "Forward",
+              "priority": 3,
+              "score": 24,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Riley Thilthorpe",
+              "position": "Forward",
+              "priority": 4,
+              "score": 29,
+              "isSub": true,
+              "subActivated": true
+            },
+            {
+              "name": "Shannon Neale",
+              "position": "Forward",
+              "priority": 5,
+              "score": 30,
+              "isSub": true,
+              "subActivated": true
+            },
+            {
+              "name": "Jack Gunston",
+              "position": "Forward",
+              "priority": 6,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Cam Rayner",
+              "position": "Forward",
+              "priority": 7,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Jordon Sweet",
+              "position": "Ruck",
+              "priority": 1,
+              "score": 59,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Tim English",
+              "position": "Ruck",
+              "priority": 2,
+              "score": 51,
+              "isSub": true,
+              "subActivated": true
+            },
+            {
+              "name": "Lachlan Smith",
+              "position": "Ruck",
+              "priority": 3,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Louis Emmett",
+              "position": "Ruck",
+              "priority": 4,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            }
+          ]
+        },
+        {
+          "home": "Bloods",
+          "homeScore": 354,
+          "away": "Punters",
+          "awayScore": 360,
+          "winner": "Punters",
+          "homePlayers": [
+            {
+              "name": "Miles Bergman",
+              "position": "Defender",
+              "priority": 0,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Liam Duggan",
+              "position": "Defender",
+              "priority": 0,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Bodhi Uwland",
+              "position": "Defender",
+              "priority": 1,
+              "score": 34,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Trent Rivers",
+              "position": "Defender",
+              "priority": 2,
+              "score": 25,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Josh Worrell",
+              "position": "Defender",
+              "priority": 3,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Tom Stewart",
+              "position": "Defender",
+              "priority": 4,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Noah Anderson",
+              "position": "Midfielder",
+              "priority": 1,
+              "score": 54,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Max Holmes",
+              "position": "Midfielder",
+              "priority": 2,
+              "score": 33,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Finn Callaghan",
+              "position": "Midfielder",
+              "priority": 3,
+              "score": 40,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Ned Long",
+              "position": "Midfielder",
+              "priority": 4,
+              "score": 28,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "James Rowbottom",
+              "position": "Midfielder",
+              "priority": 5,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Dylan Stephens",
+              "position": "Midfielder",
+              "priority": 6,
+              "score": 25,
+              "isSub": true,
+              "subActivated": true
+            },
+            {
+              "name": "Jarrod Berry",
+              "position": "Midfielder",
+              "priority": 7,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Phoenix Gothard",
+              "position": "Forward",
+              "priority": 0,
+              "score": 15,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Izak Rankine",
+              "position": "Forward",
+              "priority": 1,
+              "score": 31,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Harry Sheezel",
+              "position": "Forward",
+              "priority": 2,
+              "score": 44,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Tom Sparrow",
+              "position": "Forward",
+              "priority": 3,
+              "score": 35,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Oliver Dempsey",
+              "position": "Forward",
+              "priority": 4,
+              "score": 20,
+              "isSub": true,
+              "subActivated": true
+            },
+            {
+              "name": "Mattaes Phillipou",
+              "position": "Forward",
+              "priority": 5,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Levi Ashcroft",
+              "position": "Forward",
+              "priority": 7,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Liam Reidy",
+              "position": "Ruck",
+              "priority": 0,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Ned Moyle",
+              "position": "Ruck",
+              "priority": 1,
+              "score": 30,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Lloyd Meek",
+              "position": "Ruck",
+              "priority": 2,
+              "score": 29,
+              "isSub": true,
+              "subActivated": true
+            },
+            {
+              "name": "Ned Reeves",
+              "position": "Ruck",
+              "priority": 3,
+              "score": 21,
+              "isSub": true,
+              "subActivated": true
+            }
+          ],
+          "awayPlayers": [
+            {
+              "name": "Callum Mills",
+              "position": "Defender",
+              "priority": 0,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Jaspa Fletcher",
+              "position": "Defender",
+              "priority": 0,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Bailey Williams",
+              "position": "Defender",
+              "priority": 0,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Riley Bice",
+              "position": "Defender",
+              "priority": 0,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Joel Jeffrey",
+              "position": "Defender",
+              "priority": 1,
+              "score": 43,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Wil Powell",
+              "position": "Defender",
+              "priority": 2,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Blake Hardwick",
+              "position": "Defender",
+              "priority": 3,
+              "score": 19,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Hugh McCluggage",
+              "position": "Midfielder",
+              "priority": 0,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Zak Butters",
+              "position": "Midfielder",
+              "priority": 1,
+              "score": 38,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Clayton Oliver",
+              "position": "Midfielder",
+              "priority": 2,
+              "score": 36,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Patrick Cripps",
+              "position": "Midfielder",
+              "priority": 3,
+              "score": 37,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Matthew Kennedy",
+              "position": "Midfielder",
+              "priority": 4,
+              "score": 46,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Hugo Garcia",
+              "position": "Midfielder",
+              "priority": 5,
+              "score": 52,
+              "isSub": true,
+              "subActivated": true
+            },
+            {
+              "name": "Jagga Smith",
+              "position": "Midfielder",
+              "priority": 6,
+              "score": 30,
+              "isSub": true,
+              "subActivated": true
+            },
+            {
+              "name": "Bailey J. Williams",
+              "position": "Forward",
+              "priority": 0,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Charlie Curnow",
+              "position": "Forward",
+              "priority": 0,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Josh Treacy",
+              "position": "Forward",
+              "priority": 1,
+              "score": 27,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Murphy Reid",
+              "position": "Forward",
+              "priority": 2,
+              "score": 38,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Mitch Georgiades",
+              "position": "Forward",
+              "priority": 3,
+              "score": 32,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Ryley Sanders",
+              "position": "Forward",
+              "priority": 4,
+              "score": 28,
+              "isSub": true,
+              "subActivated": true
+            },
+            {
+              "name": "Jy Simpkin",
+              "position": "Forward",
+              "priority": 5,
+              "score": 32,
+              "isSub": true,
+              "subActivated": true
+            },
+            {
+              "name": "Nicholas Madden",
+              "position": "Ruck",
+              "priority": 0,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Tristan Xerri",
+              "position": "Ruck",
+              "priority": 1,
+              "score": 44,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Kieren Briggs",
+              "position": "Ruck",
+              "priority": 2,
+              "score": 51,
+              "isSub": true,
+              "subActivated": true
+            },
+            {
+              "name": "Marc Pittonet",
+              "position": "Ruck",
+              "priority": 3,
+              "score": 37,
+              "isSub": true,
+              "subActivated": true
+            }
+          ]
+        },
+        {
+          "home": "Mighty Squirrels",
+          "homeScore": 331,
+          "away": "Sprocket Heads",
+          "awayScore": 326,
+          "winner": "Mighty Squirrels",
+          "homePlayers": [
+            {
+              "name": "Mason Redman",
+              "position": "Defender",
+              "priority": 0,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Matt Roberts",
+              "position": "Defender",
+              "priority": 0,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Brayden Maynard",
+              "position": "Defender",
+              "priority": 0,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Lachie Ash",
+              "position": "Defender",
+              "priority": 1,
+              "score": 33,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "John Noble",
+              "position": "Defender",
+              "priority": 2,
+              "score": 32,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Rory Lobb",
+              "position": "Defender",
+              "priority": 3,
+              "score": 18,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Josh Dunkley",
+              "position": "Midfielder",
+              "priority": 0,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Angus Sheldrick",
+              "position": "Midfielder",
+              "priority": 0,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "George Hewett",
+              "position": "Midfielder",
+              "priority": 1,
+              "score": 50,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Tom Liberatore",
+              "position": "Midfielder",
+              "priority": 2,
+              "score": 32,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Jai Newcombe",
+              "position": "Midfielder",
+              "priority": 3,
+              "score": 49,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Jack Macrae",
+              "position": "Midfielder",
+              "priority": 4,
+              "score": 28,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Tanner Bruhn",
+              "position": "Midfielder",
+              "priority": 5,
+              "score": 35,
+              "isSub": true,
+              "subActivated": true
+            },
+            {
+              "name": "Roan Steele",
+              "position": "Midfielder",
+              "priority": 6,
+              "score": 13,
+              "isSub": true,
+              "subActivated": true
+            },
+            {
+              "name": "Zac Bailey",
+              "position": "Forward",
+              "priority": 0,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Peter Ladhams",
+              "position": "Forward",
+              "priority": 0,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Kysaiah Pickett",
+              "position": "Forward",
+              "priority": 1,
+              "score": 19,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Darcy Wilson",
+              "position": "Forward",
+              "priority": 2,
+              "score": 39,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Joel Freijah",
+              "position": "Forward",
+              "priority": 3,
+              "score": 31,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Nick Watson",
+              "position": "Forward",
+              "priority": 4,
+              "score": 36,
+              "isSub": true,
+              "subActivated": true
+            },
+            {
+              "name": "Lachie Schultz",
+              "position": "Forward",
+              "priority": 5,
+              "score": 29,
+              "isSub": true,
+              "subActivated": true
+            },
+            {
+              "name": "Brodie Grundy",
+              "position": "Ruck",
+              "priority": 0,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Darcy Fort",
+              "position": "Ruck",
+              "priority": 0,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Harrison Coe",
+              "position": "Ruck",
+              "priority": 1,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            }
+          ],
+          "awayPlayers": [
+            {
+              "name": "Lachie Whitfield",
+              "position": "Defender",
+              "priority": 1,
+              "score": 33,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Jordan Clark",
+              "position": "Defender",
+              "priority": 2,
+              "score": 25,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Callum Wilkie",
+              "position": "Defender",
+              "priority": 3,
+              "score": 43,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Josh Battle",
+              "position": "Defender",
+              "priority": 4,
+              "score": 24,
+              "isSub": true,
+              "subActivated": true
+            },
+            {
+              "name": "Kane Farrell",
+              "position": "Defender",
+              "priority": 5,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Zach Guthrie",
+              "position": "Defender",
+              "priority": 6,
+              "score": 24,
+              "isSub": true,
+              "subActivated": true
+            },
+            {
+              "name": "Bailey Smith",
+              "position": "Midfielder",
+              "priority": 0,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Jye Caldwell",
+              "position": "Midfielder",
+              "priority": 0,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Milan Murdock",
+              "position": "Midfielder",
+              "priority": 0,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Caleb Serong",
+              "position": "Midfielder",
+              "priority": 1,
+              "score": 28,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Sam Berry",
+              "position": "Midfielder",
+              "priority": 2,
+              "score": 38,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Cam Mackenzie",
+              "position": "Midfielder",
+              "priority": 3,
+              "score": 23,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Jake Soligo",
+              "position": "Midfielder",
+              "priority": 4,
+              "score": 9,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Jacob Hopper",
+              "position": "Midfielder",
+              "priority": 5,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Gryan Miers",
+              "position": "Forward",
+              "priority": 0,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Tim Kelly",
+              "position": "Forward",
+              "priority": 0,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Jeremy Cameron",
+              "position": "Forward",
+              "priority": 1,
+              "score": 18,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Dylan Moore",
+              "position": "Forward",
+              "priority": 2,
+              "score": 39,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Bradley Hill",
+              "position": "Forward",
+              "priority": 3,
+              "score": 43,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Alex Neal-Bullen",
+              "position": "Forward",
+              "priority": 4,
+              "score": 25,
+              "isSub": true,
+              "subActivated": true
+            },
+            {
+              "name": "Mitch Lewis",
+              "position": "Forward",
+              "priority": 5,
+              "score": 12,
+              "isSub": true,
+              "subActivated": true
+            },
+            {
+              "name": "Darcy Cameron",
+              "position": "Ruck",
+              "priority": 1,
+              "score": 27,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Mark Blicavs",
+              "position": "Ruck",
+              "priority": 2,
+              "score": 24,
+              "isSub": true,
+              "subActivated": true
+            }
+          ]
+        },
+        {
+          "home": "Cobras",
+          "homeScore": 421,
+          "away": "Wando Cans",
+          "awayScore": 318,
+          "winner": "Cobras",
+          "homePlayers": [
+            {
+              "name": "Nasiah Wanganeen-Milera",
+              "position": "Defender",
+              "priority": 1,
+              "score": 53,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Bailey Dale",
+              "position": "Defender",
+              "priority": 2,
+              "score": 36,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Daniel Rioli",
+              "position": "Defender",
+              "priority": 3,
+              "score": 18,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Karl Worner",
+              "position": "Defender",
+              "priority": 4,
+              "score": 28,
+              "isSub": true,
+              "subActivated": true
+            },
+            {
+              "name": "Will Setterfield",
+              "position": "Defender",
+              "priority": 5,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Tom McCarthy",
+              "position": "Defender",
+              "priority": 6,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Marcus Bontempelli",
+              "position": "Midfielder",
+              "priority": 1,
+              "score": 53,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Jordan Dawson",
+              "position": "Midfielder",
+              "priority": 2,
+              "score": 39,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Will Day",
+              "position": "Midfielder",
+              "priority": 3,
+              "score": 35,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Jack Crisp",
+              "position": "Midfielder",
+              "priority": 4,
+              "score": 21,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Harvey Langford",
+              "position": "Midfielder",
+              "priority": 5,
+              "score": 29,
+              "isSub": true,
+              "subActivated": true
+            },
+            {
+              "name": "Willem Drew",
+              "position": "Midfielder",
+              "priority": 6,
+              "score": 38,
+              "isSub": true,
+              "subActivated": true
+            },
+            {
+              "name": "James Worpel",
+              "position": "Midfielder",
+              "priority": 7,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Zach Merrett",
+              "position": "Midfielder",
+              "priority": 8,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Aaron Naughton",
+              "position": "Forward",
+              "priority": 1,
+              "score": 22,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Nick Larkey",
+              "position": "Forward",
+              "priority": 2,
+              "score": 26,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Harry McKay",
+              "position": "Forward",
+              "priority": 3,
+              "score": 33,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Ben King",
+              "position": "Forward",
+              "priority": 4,
+              "score": 11,
+              "isSub": true,
+              "subActivated": true
+            },
+            {
+              "name": "Justin McInerney",
+              "position": "Forward",
+              "priority": 5,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Luke Jackson",
+              "position": "Ruck",
+              "priority": 1,
+              "score": 85,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Mitchell Edwards",
+              "position": "Ruck",
+              "priority": 2,
+              "score": 27,
+              "isSub": true,
+              "subActivated": true
+            },
+            {
+              "name": "Sean Darcy",
+              "position": "Ruck",
+              "priority": 3,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            }
+          ],
+          "awayPlayers": [
+            {
+              "name": "Jai Serong",
+              "position": "Defender",
+              "priority": 0,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Oliver Hollands",
+              "position": "Defender",
+              "priority": 0,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "James Sicily",
+              "position": "Defender",
+              "priority": 1,
+              "score": 21,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Rory Laird",
+              "position": "Defender",
+              "priority": 2,
+              "score": 39,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Jake Bowey",
+              "position": "Defender",
+              "priority": 3,
+              "score": 30,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Jase Burgoyne",
+              "position": "Defender",
+              "priority": 4,
+              "score": 35,
+              "isSub": true,
+              "subActivated": true
+            },
+            {
+              "name": "Oliver Florent",
+              "position": "Defender",
+              "priority": 5,
+              "score": 21,
+              "isSub": true,
+              "subActivated": true
+            },
+            {
+              "name": "Lachie Neale",
+              "position": "Midfielder",
+              "priority": 0,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Tom Powell",
+              "position": "Midfielder",
+              "priority": 0,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Sam Durham",
+              "position": "Midfielder",
+              "priority": 0,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Nick Daicos",
+              "position": "Midfielder",
+              "priority": 1,
+              "score": 58,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Matt Rowell",
+              "position": "Midfielder",
+              "priority": 2,
+              "score": 35,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Dion Prestia",
+              "position": "Midfielder",
+              "priority": 3,
+              "score": 28,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Adam Cerra",
+              "position": "Midfielder",
+              "priority": 4,
+              "score": 25,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Ollie Wines",
+              "position": "Midfielder",
+              "priority": 5,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Peter Wright",
+              "position": "Forward",
+              "priority": 0,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Paul Curtis",
+              "position": "Forward",
+              "priority": 0,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Xavier Duursma",
+              "position": "Forward",
+              "priority": 0,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Jake Waterman",
+              "position": "Forward",
+              "priority": 0,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Jack Ross",
+              "position": "Forward",
+              "priority": 1,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Jack Ginnivan",
+              "position": "Forward",
+              "priority": 2,
+              "score": 29,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Ed Langdon",
+              "position": "Forward",
+              "priority": 3,
+              "score": 22,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Nick Bryan",
+              "position": "Ruck",
+              "priority": 0,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Toby Nankervis",
+              "position": "Ruck",
+              "priority": 1,
+              "score": 31,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Tom De Koning",
+              "position": "Ruck",
+              "priority": 2,
+              "score": 25,
+              "isSub": true,
+              "subActivated": true
+            },
+            {
+              "name": "Oliver Hayes-Brown",
+              "position": "Ruck",
+              "priority": 3,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "round": 16,
+      "status": "in_progress",
+      "ladder": [
+        {
+          "rank": 1,
+          "team": "Cobras",
+          "points": 40,
+          "wins": 10,
+          "for": 6106,
+          "against": 5790,
+          "percentage": 105.5
+        },
+        {
+          "rank": 2,
+          "team": "Mighty Squirrels",
+          "points": 40,
+          "wins": 10,
+          "for": 5761,
+          "against": 5579,
+          "percentage": 103.3
+        },
+        {
+          "rank": 3,
+          "team": "Strucks",
+          "points": 36,
+          "wins": 9,
+          "for": 5724,
+          "against": 5671,
+          "percentage": 100.9
+        },
+        {
+          "rank": 4,
+          "team": "The Foxes",
+          "points": 36,
+          "wins": 9,
+          "for": 5672,
+          "against": 5553,
+          "percentage": 102.1
+        },
+        {
+          "rank": 5,
+          "team": "Bullants",
+          "points": 32,
+          "wins": 8,
+          "for": 5783,
+          "against": 5761,
+          "percentage": 100.4
+        },
+        {
+          "rank": 6,
+          "team": "Punters",
+          "points": 32,
+          "wins": 8,
+          "for": 5724,
+          "against": 5789,
+          "percentage": 98.9
+        },
+        {
+          "rank": 7,
+          "team": "Wando Cans",
+          "points": 32,
+          "wins": 8,
+          "for": 5637,
+          "against": 5600,
+          "percentage": 100.7
+        },
+        {
+          "rank": 8,
+          "team": "Party Pies",
+          "points": 28,
+          "wins": 7,
+          "for": 5550,
+          "against": 5697,
+          "percentage": 97.4
+        },
+        {
+          "rank": 9,
+          "team": "Sprocket Heads",
+          "points": 12,
+          "wins": 3,
+          "for": 5497,
+          "against": 5712,
+          "percentage": 96.2
+        },
+        {
+          "rank": 10,
+          "team": "Bloods",
+          "points": 12,
+          "wins": 3,
+          "for": 5412,
+          "against": 5714,
+          "percentage": 94.7
+        }
+      ],
+      "matches": [
+        {
+          "home": "Bullants",
+          "homeScore": 61,
+          "away": "Strucks",
+          "awayScore": 155,
+          "winner": "Strucks",
+          "homePlayers": [
+            {
+              "name": "Dan Houston",
+              "position": "Defender",
+              "priority": 0,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Mac Andrew",
+              "position": "Defender",
+              "priority": 1,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Josh Daicos",
+              "position": "Defender",
+              "priority": 2,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Nick Blakey",
+              "position": "Defender",
+              "priority": 3,
+              "score": 22,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Caleb Daniel",
+              "position": "Defender",
+              "priority": 4,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Aliir Aliir",
+              "position": "Defender",
+              "priority": 5,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Elijah Tsatas",
+              "position": "Midfielder",
+              "priority": 0,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Sam Walsh",
+              "position": "Midfielder",
+              "priority": 1,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Luke Davies-Uniacke",
+              "position": "Midfielder",
+              "priority": 2,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Touk Miller",
+              "position": "Midfielder",
+              "priority": 3,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Harley Reid",
+              "position": "Midfielder",
+              "priority": 4,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Blake Acres",
+              "position": "Midfielder",
+              "priority": 5,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Patrick Dangerfield",
+              "position": "Forward",
+              "priority": 0,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Jordan De Goey",
+              "position": "Forward",
+              "priority": 1,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Christian Petracca",
+              "position": "Forward",
+              "priority": 2,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Toby Greene",
+              "position": "Forward",
+              "priority": 3,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Brent Daniels",
+              "position": "Forward",
+              "priority": 4,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Jarrod Witts",
+              "position": "Ruck",
+              "priority": 0,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Rhys Stanley",
+              "position": "Ruck",
+              "priority": 0,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Max Heath",
+              "position": "Ruck",
+              "priority": 0,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Sam Draper",
+              "position": "Ruck",
+              "priority": 1,
+              "score": 39,
+              "isSub": false,
+              "subActivated": false
+            }
+          ],
+          "awayPlayers": [
+            {
+              "name": "Jack Bowes",
+              "position": "Defender",
+              "priority": 0,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Lawson Humphries",
+              "position": "Defender",
+              "priority": 0,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Karl Amon",
+              "position": "Defender",
+              "priority": 1,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Jayden Short",
+              "position": "Defender",
+              "priority": 2,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Darcy Wilmot",
+              "position": "Defender",
+              "priority": 3,
+              "score": 20,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Noah Balta",
+              "position": "Defender",
+              "priority": 4,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Luke Ryan",
+              "position": "Defender",
+              "priority": 5,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Tom Atkins",
+              "position": "Midfielder",
+              "priority": 0,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Marcus Windhager",
+              "position": "Midfielder",
+              "priority": 0,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Isaac Heeney",
+              "position": "Midfielder",
+              "priority": 1,
+              "score": 51,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Chad Warner",
+              "position": "Midfielder",
+              "priority": 2,
+              "score": 57,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Errol Gulden",
+              "position": "Midfielder",
+              "priority": 3,
+              "score": 27,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Willem Duursma",
+              "position": "Midfielder",
+              "priority": 4,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Massimo D'Ambrosio",
+              "position": "Midfielder",
+              "priority": 5,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Neil Erasmus",
+              "position": "Midfielder",
+              "priority": 6,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Jack Gunston",
+              "position": "Forward",
+              "priority": 0,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Max Hall",
+              "position": "Forward",
+              "priority": 0,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Jason Horne-Francis",
+              "position": "Forward",
+              "priority": 1,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Riley Thilthorpe",
+              "position": "Forward",
+              "priority": 2,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Shai Bolton",
+              "position": "Forward",
+              "priority": 3,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Cam Rayner",
+              "position": "Forward",
+              "priority": 4,
+              "score": 33,
+              "isSub": true,
+              "subActivated": true
+            },
+            {
+              "name": "Shannon Neale",
+              "position": "Forward",
+              "priority": 5,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Tim English",
+              "position": "Ruck",
+              "priority": 0,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Louis Emmett",
+              "position": "Ruck",
+              "priority": 0,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Lachlan Smith",
+              "position": "Ruck",
+              "priority": 0,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Jordon Sweet",
+              "position": "Ruck",
+              "priority": 1,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            }
+          ]
+        },
+        {
+          "home": "The Foxes",
+          "homeScore": 45,
+          "away": "Punters",
+          "awayScore": 71,
+          "winner": "Punters",
+          "homePlayers": [
+            {
+              "name": "Wayne Milera",
+              "position": "Defender",
+              "priority": 1,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Colby McKercher",
+              "position": "Defender",
+              "priority": 2,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Joe Fonti",
+              "position": "Defender",
+              "priority": 3,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Finn O'Sullivan",
+              "position": "Defender",
+              "priority": 4,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Jacob Farrow",
+              "position": "Defender",
+              "priority": 5,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Jaxon Artemis",
+              "position": "Defender",
+              "priority": 6,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Archie Roberts",
+              "position": "Defender",
+              "priority": 7,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Will Ashcroft",
+              "position": "Midfielder",
+              "priority": 1,
+              "score": 45,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Ed Richards",
+              "position": "Midfielder",
+              "priority": 2,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Josh Ward",
+              "position": "Midfielder",
+              "priority": 3,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Hayden Young",
+              "position": "Midfielder",
+              "priority": 4,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Joel Fitzgerald",
+              "position": "Midfielder",
+              "priority": 5,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "George Wardlaw",
+              "position": "Midfielder",
+              "priority": 6,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Nathan O'Driscoll",
+              "position": "Midfielder",
+              "priority": 7,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Sam Cumming",
+              "position": "Midfielder",
+              "priority": 8,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Josh Rachele",
+              "position": "Forward",
+              "priority": 1,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Connor MacDonald",
+              "position": "Forward",
+              "priority": 2,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Harvey Thomas",
+              "position": "Forward",
+              "priority": 3,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Kyle Langford",
+              "position": "Forward",
+              "priority": 4,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Aaron Cadman",
+              "position": "Forward",
+              "priority": 5,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Bailey Humphrey",
+              "position": "Forward",
+              "priority": 6,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Max Gawn",
+              "position": "Ruck",
+              "priority": 1,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Dante Visentini",
+              "position": "Ruck",
+              "priority": 2,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            }
+          ],
+          "awayPlayers": [
+            {
+              "name": "Bailey Williams",
+              "position": "Defender",
+              "priority": 0,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Callum Mills",
+              "position": "Defender",
+              "priority": 1,
+              "score": 40,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Riley Bice",
+              "position": "Defender",
+              "priority": 2,
+              "score": 31,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Joel Jeffrey",
+              "position": "Defender",
+              "priority": 3,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Wil Powell",
+              "position": "Defender",
+              "priority": 4,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Jaspa Fletcher",
+              "position": "Defender",
+              "priority": 5,
+              "score": 30,
+              "isSub": true,
+              "subActivated": true
+            },
+            {
+              "name": "Blake Hardwick",
+              "position": "Defender",
+              "priority": 6,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Hugh McCluggage",
+              "position": "Midfielder",
+              "priority": 0,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Matthew Kennedy",
+              "position": "Midfielder",
+              "priority": 0,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Hugo Garcia",
+              "position": "Midfielder",
+              "priority": 0,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Zak Butters",
+              "position": "Midfielder",
+              "priority": 1,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Clayton Oliver",
+              "position": "Midfielder",
+              "priority": 2,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Patrick Cripps",
+              "position": "Midfielder",
+              "priority": 3,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Jagga Smith",
+              "position": "Midfielder",
+              "priority": 4,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Ryley Sanders",
+              "position": "Forward",
+              "priority": 0,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Bailey J. Williams",
+              "position": "Forward",
+              "priority": 1,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Josh Treacy",
+              "position": "Forward",
+              "priority": 2,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Murphy Reid",
+              "position": "Forward",
+              "priority": 3,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Mitch Georgiades",
+              "position": "Forward",
+              "priority": 4,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Charlie Curnow",
+              "position": "Forward",
+              "priority": 5,
+              "score": 37,
+              "isSub": true,
+              "subActivated": true
+            },
+            {
+              "name": "Jy Simpkin",
+              "position": "Forward",
+              "priority": 6,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Tristan Xerri",
+              "position": "Ruck",
+              "priority": 0,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Nicholas Madden",
+              "position": "Ruck",
+              "priority": 0,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Kieren Briggs",
+              "position": "Ruck",
+              "priority": 1,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Marc Pittonet",
+              "position": "Ruck",
+              "priority": 2,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            }
+          ]
+        },
+        {
+          "home": "Party Pies",
+          "homeScore": 49,
+          "away": "Sprocket Heads",
+          "awayScore": 0,
+          "winner": "Party Pies",
+          "homePlayers": [
+            {
+              "name": "Jack Sinclair",
+              "position": "Defender",
+              "priority": 0,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Dayne Zorko",
+              "position": "Defender",
+              "priority": 0,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Jarman Impey",
+              "position": "Defender",
+              "priority": 0,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Nic Newman",
+              "position": "Defender",
+              "priority": 1,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Sam Banks",
+              "position": "Defender",
+              "priority": 2,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Tom McCartin",
+              "position": "Defender",
+              "priority": 3,
+              "score": 16,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Connor Idun",
+              "position": "Defender",
+              "priority": 4,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Jack Steele",
+              "position": "Midfielder",
+              "priority": 0,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Andrew Brayshaw",
+              "position": "Midfielder",
+              "priority": 1,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Tim Taranto",
+              "position": "Midfielder",
+              "priority": 2,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Darcy Parish",
+              "position": "Midfielder",
+              "priority": 3,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Luke Parker",
+              "position": "Midfielder",
+              "priority": 4,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Scott Pendlebury",
+              "position": "Midfielder",
+              "priority": 5,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Elliot Yeo",
+              "position": "Midfielder",
+              "priority": 6,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Shaun Mannagh",
+              "position": "Forward",
+              "priority": 0,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Adam Treloar",
+              "position": "Forward",
+              "priority": 0,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Logan Morris",
+              "position": "Forward",
+              "priority": 1,
+              "score": 33,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Will Hayward",
+              "position": "Forward",
+              "priority": 2,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Patrick Lipinski",
+              "position": "Forward",
+              "priority": 3,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Ben Ainsworth",
+              "position": "Forward",
+              "priority": 4,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "James Peatling",
+              "position": "Forward",
+              "priority": 5,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Rowan Marshall",
+              "position": "Ruck",
+              "priority": 0,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Lachlan McAndrew",
+              "position": "Ruck",
+              "priority": 1,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Reilly O'Brien",
+              "position": "Ruck",
+              "priority": 2,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Matt Flynn",
+              "position": "Ruck",
+              "priority": 3,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            }
+          ],
+          "awayPlayers": [
+            {
+              "name": "Callum Wilkie",
+              "position": "Defender",
+              "priority": 0,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Zach Guthrie",
+              "position": "Defender",
+              "priority": 0,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Lachie Whitfield",
+              "position": "Defender",
+              "priority": 1,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Jordan Clark",
+              "position": "Defender",
+              "priority": 2,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Josh Battle",
+              "position": "Defender",
+              "priority": 3,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Kane Farrell",
+              "position": "Defender",
+              "priority": 4,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Bailey Smith",
+              "position": "Midfielder",
+              "priority": 0,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Jye Caldwell",
+              "position": "Midfielder",
+              "priority": 1,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Caleb Serong",
+              "position": "Midfielder",
+              "priority": 2,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Sam Berry",
+              "position": "Midfielder",
+              "priority": 3,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Cam Mackenzie",
+              "position": "Midfielder",
+              "priority": 4,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Milan Murdock",
+              "position": "Midfielder",
+              "priority": 5,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Jake Soligo",
+              "position": "Midfielder",
+              "priority": 6,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Jacob Hopper",
+              "position": "Midfielder",
+              "priority": 7,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Jeremy Cameron",
+              "position": "Forward",
+              "priority": 0,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Gryan Miers",
+              "position": "Forward",
+              "priority": 0,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Bradley Hill",
+              "position": "Forward",
+              "priority": 0,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Dylan Moore",
+              "position": "Forward",
+              "priority": 1,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Alex Neal-Bullen",
+              "position": "Forward",
+              "priority": 2,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Tim Kelly",
+              "position": "Forward",
+              "priority": 3,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Mitch Lewis",
+              "position": "Forward",
+              "priority": 4,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Mark Blicavs",
+              "position": "Ruck",
+              "priority": 0,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Darcy Cameron",
+              "position": "Ruck",
+              "priority": 1,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            }
+          ]
+        },
+        {
+          "home": "Bloods",
+          "homeScore": 66,
+          "away": "Wando Cans",
+          "awayScore": 37,
+          "winner": "Bloods",
+          "homePlayers": [
+            {
+              "name": "Trent Rivers",
+              "position": "Defender",
+              "priority": 0,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Miles Bergman",
+              "position": "Defender",
+              "priority": 0,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Tom Stewart",
+              "position": "Defender",
+              "priority": 0,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Bodhi Uwland",
+              "position": "Defender",
+              "priority": 1,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Josh Worrell",
+              "position": "Defender",
+              "priority": 2,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Liam Duggan",
+              "position": "Defender",
+              "priority": 3,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Max Holmes",
+              "position": "Midfielder",
+              "priority": 0,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Noah Anderson",
+              "position": "Midfielder",
+              "priority": 1,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Finn Callaghan",
+              "position": "Midfielder",
+              "priority": 2,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Jarrod Berry",
+              "position": "Midfielder",
+              "priority": 3,
+              "score": 29,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Ned Long",
+              "position": "Midfielder",
+              "priority": 4,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Dylan Stephens",
+              "position": "Midfielder",
+              "priority": 5,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "James Rowbottom",
+              "position": "Midfielder",
+              "priority": 6,
+              "score": 42,
+              "isSub": true,
+              "subActivated": true
+            },
+            {
+              "name": "Oliver Dempsey",
+              "position": "Forward",
+              "priority": 0,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Mattaes Phillipou",
+              "position": "Forward",
+              "priority": 0,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Tom Sparrow",
+              "position": "Forward",
+              "priority": 0,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Harry Sheezel",
+              "position": "Forward",
+              "priority": 1,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Izak Rankine",
+              "position": "Forward",
+              "priority": 2,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Levi Ashcroft",
+              "position": "Forward",
+              "priority": 3,
+              "score": 37,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Phoenix Gothard",
+              "position": "Forward",
+              "priority": 4,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Liam Reidy",
+              "position": "Ruck",
+              "priority": 0,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Ned Moyle",
+              "position": "Ruck",
+              "priority": 1,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Lloyd Meek",
+              "position": "Ruck",
+              "priority": 2,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Ned Reeves",
+              "position": "Ruck",
+              "priority": 3,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            }
+          ],
+          "awayPlayers": [
+            {
+              "name": "Jake Bowey",
+              "position": "Defender",
+              "priority": 0,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Rory Laird",
+              "position": "Defender",
+              "priority": 1,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "James Sicily",
+              "position": "Defender",
+              "priority": 2,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Jase Burgoyne",
+              "position": "Defender",
+              "priority": 3,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Jai Serong",
+              "position": "Defender",
+              "priority": 4,
+              "score": 14,
+              "isSub": true,
+              "subActivated": true
+            },
+            {
+              "name": "Oliver Florent",
+              "position": "Defender",
+              "priority": 5,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Oliver Hollands",
+              "position": "Defender",
+              "priority": 6,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Tom Powell",
+              "position": "Midfielder",
+              "priority": 0,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Nick Daicos",
+              "position": "Midfielder",
+              "priority": 1,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Lachie Neale",
+              "position": "Midfielder",
+              "priority": 2,
+              "score": 37,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Matt Rowell",
+              "position": "Midfielder",
+              "priority": 3,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Sam Durham",
+              "position": "Midfielder",
+              "priority": 4,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Dion Prestia",
+              "position": "Midfielder",
+              "priority": 5,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Adam Cerra",
+              "position": "Midfielder",
+              "priority": 6,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Ollie Wines",
+              "position": "Midfielder",
+              "priority": 7,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Peter Wright",
+              "position": "Forward",
+              "priority": 0,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Paul Curtis",
+              "position": "Forward",
+              "priority": 0,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Ed Langdon",
+              "position": "Forward",
+              "priority": 0,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Jack Ross",
+              "position": "Forward",
+              "priority": 1,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Jake Waterman",
+              "position": "Forward",
+              "priority": 2,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Jack Ginnivan",
+              "position": "Forward",
+              "priority": 3,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Xavier Duursma",
+              "position": "Forward",
+              "priority": 4,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Tom De Koning",
+              "position": "Ruck",
+              "priority": 0,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Nick Bryan",
+              "position": "Ruck",
+              "priority": 1,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Toby Nankervis",
+              "position": "Ruck",
+              "priority": 2,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Oliver Hayes-Brown",
+              "position": "Ruck",
+              "priority": 3,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            }
+          ]
+        },
+        {
+          "home": "Mighty Squirrels",
+          "homeScore": 197,
+          "away": "Cobras",
+          "awayScore": 0,
+          "winner": "Mighty Squirrels",
+          "homePlayers": [
+            {
+              "name": "Brayden Maynard",
+              "position": "Defender",
+              "priority": 0,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Rory Lobb",
+              "position": "Defender",
+              "priority": 0,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Lachie Ash",
+              "position": "Defender",
+              "priority": 1,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "John Noble",
+              "position": "Defender",
+              "priority": 2,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Mason Redman",
+              "position": "Defender",
+              "priority": 3,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Matt Roberts",
+              "position": "Defender",
+              "priority": 4,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Tom Liberatore",
+              "position": "Midfielder",
+              "priority": 0,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Jack Macrae",
+              "position": "Midfielder",
+              "priority": 0,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Tanner Bruhn",
+              "position": "Midfielder",
+              "priority": 0,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Josh Dunkley",
+              "position": "Midfielder",
+              "priority": 1,
+              "score": 43,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "George Hewett",
+              "position": "Midfielder",
+              "priority": 2,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Angus Sheldrick",
+              "position": "Midfielder",
+              "priority": 3,
+              "score": 37,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Jai Newcombe",
+              "position": "Midfielder",
+              "priority": 4,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Roan Steele",
+              "position": "Midfielder",
+              "priority": 5,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Kysaiah Pickett",
+              "position": "Forward",
+              "priority": 0,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Joel Freijah",
+              "position": "Forward",
+              "priority": 0,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Darcy Wilson",
+              "position": "Forward",
+              "priority": 0,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Zac Bailey",
+              "position": "Forward",
+              "priority": 1,
+              "score": 43,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Nick Watson",
+              "position": "Forward",
+              "priority": 2,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Peter Ladhams",
+              "position": "Forward",
+              "priority": 3,
+              "score": 25,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Lachie Schultz",
+              "position": "Forward",
+              "priority": 4,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Brodie Grundy",
+              "position": "Ruck",
+              "priority": 1,
+              "score": 49,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Darcy Fort",
+              "position": "Ruck",
+              "priority": 2,
+              "score": 43,
+              "isSub": true,
+              "subActivated": true
+            },
+            {
+              "name": "Harrison Coe",
+              "position": "Ruck",
+              "priority": 3,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            }
+          ],
+          "awayPlayers": [
+            {
+              "name": "Will Setterfield",
+              "position": "Defender",
+              "priority": 1,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Tom McCarthy",
+              "position": "Defender",
+              "priority": 2,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Karl Worner",
+              "position": "Defender",
+              "priority": 3,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Daniel Rioli",
+              "position": "Defender",
+              "priority": 4,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Nasiah Wanganeen-Milera",
+              "position": "Defender",
+              "priority": 5,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Bailey Dale",
+              "position": "Defender",
+              "priority": 6,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Jordan Dawson",
+              "position": "Midfielder",
+              "priority": 1,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Zach Merrett",
+              "position": "Midfielder",
+              "priority": 2,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Will Day",
+              "position": "Midfielder",
+              "priority": 3,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Jack Crisp",
+              "position": "Midfielder",
+              "priority": 4,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Willem Drew",
+              "position": "Midfielder",
+              "priority": 5,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Harvey Langford",
+              "position": "Midfielder",
+              "priority": 6,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "James Worpel",
+              "position": "Midfielder",
+              "priority": 7,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Marcus Bontempelli",
+              "position": "Midfielder",
+              "priority": 8,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Harry McKay",
+              "position": "Forward",
+              "priority": 1,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Nick Larkey",
+              "position": "Forward",
+              "priority": 2,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Ben King",
+              "position": "Forward",
+              "priority": 3,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Aaron Naughton",
+              "position": "Forward",
+              "priority": 4,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Justin McInerney",
+              "position": "Forward",
+              "priority": 5,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Luke Jackson",
+              "position": "Ruck",
+              "priority": 1,
+              "score": 0,
+              "isSub": false,
+              "subActivated": false
+            },
+            {
+              "name": "Sean Darcy",
+              "position": "Ruck",
+              "priority": 2,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            },
+            {
+              "name": "Mitchell Edwards",
+              "position": "Ruck",
+              "priority": 3,
+              "score": 0,
+              "isSub": true,
+              "subActivated": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
