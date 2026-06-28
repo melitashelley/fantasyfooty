@@ -45,9 +45,11 @@ function PlayerCell({ player, side }) {
   const didNotPlay = player.didNotPlay
   const canExpand = hasStatBreakdown(player)
 
-  const scoreEl = (didNotPlay || isInactiveSub)
+  const scoreEl = didNotPlay
     ? <span className="player-score muted">—</span>
-    : <span className={`player-score ${player.score > 0 ? 'green' : 'muted'}`}>{player.score}</span>
+    : isInactiveSub
+      ? <span className="player-score muted">{player.score > 0 ? player.score : '—'}</span>
+      : <span className={`player-score ${player.score > 0 ? 'green' : 'muted'}`}>{player.score}</span>
 
   return (
     <div
