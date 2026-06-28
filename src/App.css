@@ -1427,6 +1427,18 @@
   flex-shrink: 0;
 }
 
+.sub-label--out {
+  background: #FEF2F2;
+  border-color: #FECACA;
+  color: #DC2626;
+}
+
+.sub-label--active {
+  background: var(--green-light);
+  border-color: var(--green-mid);
+  color: var(--green);
+}
+
 .player-cell--tappable { cursor: pointer; }
 .player-cell--tappable:active { background: var(--bg-secondary); }
 

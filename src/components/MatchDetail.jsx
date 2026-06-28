@@ -40,22 +40,29 @@ function PlayerCell({ player, side }) {
 
   if (!player) return <div className={`player-cell player-cell--${side} player-cell--empty`} />
 
-  const isSub = player.isSub && !player.subActivated
+  const isInactiveSub = player.isSub && !player.subActivated
+  const isActiveSub = player.isSub && player.subActivated
+  const didNotPlay = player.didNotPlay
   const canExpand = hasStatBreakdown(player)
 
-  const scoreEl = isSub
-    ? <span className="player-score muted">{player.score > 0 ? player.score : '—'}</span>
+  const scoreEl = (didNotPlay || isInactiveSub)
+    ? <span className="player-score muted">—</span>
     : <span className={`player-score ${player.score > 0 ? 'green' : 'muted'}`}>{player.score}</span>
 
   return (
     <div
-      className={`player-cell player-cell--${side}${isSub ? ' player-cell--sub' : ''}${canExpand ? ' player-cell--tappable' : ''}`}
+      className={`player-cell player-cell--${side}${isInactiveSub ? ' player-cell--sub' : ''}${canExpand ? ' player-cell--tappable' : ''}`}
       style={{ flexDirection: 'column', alignItems: 'stretch' }}
       onClick={canExpand ? () => setExpanded((e) => !e) : undefined}
     >
       <div className="player-cell-main">
         <span className="player-name">{player.name}</span>
-        {isSub && <span className="sub-label">Sub</span>}
+        {didNotPlay && <span className="sub-label sub-label--out">Out</span>}
+        {player.isSub && (
+          <span className={`sub-label${isActiveSub ? ' sub-label--active' : ''}`}>
+            Sub {player.priority}{isActiveSub ? ' ▶' : ''}
+          </span>
+        )}
         {scoreEl}
         {canExpand && <span className="expand-chevron">{expanded ? '▲' : '▼'}</span>}
       </div>
