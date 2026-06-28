@@ -109,7 +109,7 @@ function MatchCard({ match, status, onClick }) {
   )
 }
 
-function FixtureMatch({ match, homeSubmitted, awaySubmitted, isUserMatch, userTeam, userLineup, cutoffOk, onSubmitLineup, roundNum, onClick }) {
+function FixtureMatch({ match, homeSubmitted, awaySubmitted, userTeam, userLineup, cutoffOk, onSubmitLineup, roundNum }) {
   const [lineupOpen, setLineupOpen] = useState(false)
   const userIsHome = userTeam === match.home
   const userIsAway = userTeam === match.away
@@ -120,13 +120,13 @@ function FixtureMatch({ match, homeSubmitted, awaySubmitted, isUserMatch, userTe
     if (team === userTeam && submitted) {
       return (
         <div className="fixture-user-actions">
-          <button className="fixture-submit-link" onClick={(e) => { e.stopPropagation(); setLineupOpen(o => !o) }}>
+          <button className="fixture-submit-link" onClick={() => setLineupOpen(o => !o)}>
             {lineupOpen ? 'Hide lineup' : 'View lineup'}
           </button>
           {cutoffOk && (
             <>
               <span className="fixture-action-sep">·</span>
-              <button className="fixture-submit-link" onClick={(e) => { e.stopPropagation(); onSubmitLineup(roundNum) }}>
+              <button className="fixture-submit-link" onClick={() => onSubmitLineup(roundNum)}>
                 Edit lineup
               </button>
             </>
@@ -136,7 +136,7 @@ function FixtureMatch({ match, homeSubmitted, awaySubmitted, isUserMatch, userTe
     }
     if (team === userTeam && !submitted && cutoffOk) {
       return (
-        <button className="fixture-submit-link" onClick={(e) => { e.stopPropagation(); onSubmitLineup(roundNum) }}>
+        <button className="fixture-submit-link" onClick={() => onSubmitLineup(roundNum)}>
           Submit lineup →
         </button>
       )
@@ -147,13 +147,7 @@ function FixtureMatch({ match, homeSubmitted, awaySubmitted, isUserMatch, userTe
 
   return (
     <div className="fixture-card">
-      <div
-        className={`fixture-match${isUserMatch ? ' fixture-match--clickable' : ''}`}
-        onClick={isUserMatch ? onClick : undefined}
-        role={isUserMatch ? 'button' : undefined}
-        tabIndex={isUserMatch ? 0 : undefined}
-        onKeyDown={isUserMatch ? (e) => e.key === 'Enter' && onClick?.() : undefined}
-      >
+      <div className="fixture-match">
         <div className="fixture-match-side">
           <span className="fixture-team">{match.home}</span>
           {statusLabel(match.home, homeSubmitted)}
@@ -187,8 +181,7 @@ function FixtureMatch({ match, homeSubmitted, awaySubmitted, isUserMatch, userTe
   )
 }
 
-export default function Rounds({ data, onMatchClick, onUpcomingMatchClick, onSubmitLineup }) {
-  const [selectedRound, setSelectedRound] = useState(data.currentRound)
+export default function Rounds({ data, selectedRound, onRoundChange, onMatchClick, onUpcomingMatchClick, onSubmitLineup }) {
   const stripRef = useRef(null)
 
   // Recall team code from session (set after successful submission)
@@ -230,7 +223,7 @@ export default function Rounds({ data, onMatchClick, onUpcomingMatchClick, onSub
             key={n}
             data-round={n}
             className={getPillClass(n, selectedRound, data)}
-            onClick={() => setSelectedRound(n)}
+            onClick={() => onRoundChange(n)}
           >
             R{n}
           </button>
@@ -257,7 +250,6 @@ export default function Rounds({ data, onMatchClick, onUpcomingMatchClick, onSub
               fixtureMatches.map((m, i) => {
                 const homeSubmitted = !!(data.submittedLineups?.[selectedRound]?.[m.home]?.length)
                 const awaySubmitted = !!(data.submittedLineups?.[selectedRound]?.[m.away]?.length)
-                const isUserMatch = storedTeam === m.home || storedTeam === m.away
                 const userLineup = storedTeam ? (data.submittedLineups?.[selectedRound]?.[storedTeam] || []) : []
                 return (
                   <FixtureMatch
@@ -265,13 +257,11 @@ export default function Rounds({ data, onMatchClick, onUpcomingMatchClick, onSub
                     match={m}
                     homeSubmitted={homeSubmitted}
                     awaySubmitted={awaySubmitted}
-                    isUserMatch={isUserMatch}
                     userTeam={storedTeam}
                     userLineup={userLineup}
                     cutoffOk={cutoffOk}
                     onSubmitLineup={onSubmitLineup}
                     roundNum={selectedRound}
-                    onClick={() => onUpcomingMatchClick?.(m, selectedRound)}
                   />
                 )
               })

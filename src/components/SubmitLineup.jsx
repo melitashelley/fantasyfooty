@@ -312,7 +312,7 @@ export default function SubmitLineup({ data, roundNum, onClose }) {
   return (
     <div className="submit-overlay">
       <div className="submit-overlay-header">
-        <button className="back-btn" onClick={() => setStep(1)}>‹ Back</button>
+        <button className="back-btn" onClick={() => _storedTeam ? onClose() : setStep(1)}>‹ Back</button>
         <span className="submit-overlay-title">{teamName}</span>
         <span className="submit-round-label">Round {roundNum}</span>
       </div>

@@ -1085,11 +1085,7 @@
   border: 1px solid var(--border);
   border-radius: var(--radius-card);
   padding: 12px 14px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  cursor: pointer;
-  text-align: left;
+  box-sizing: border-box;
 }
 
 .myteam-next-teams {
@@ -1107,6 +1103,10 @@
 .myteam-submitted-tag {
   color: var(--status-complete);
   font-weight: 600;
+}
+
+.myteam-next-match .fixture-user-actions {
+  margin-top: 6px;
 }
 
 .myteam-chevron {

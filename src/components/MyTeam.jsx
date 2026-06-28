@@ -60,7 +60,6 @@ function PlayerRow({ player, seasonTotal, earnedTotal, matches }) {
       <div className="myteam-player-info">
         <span className="myteam-player-name">{player.name}</span>
         <ClubLogo aflTeam={player.afl_team} />
-        <span className="myteam-club-text">{player.afl_team}</span>
       </div>
       <div className="myteam-player-pts">
         <div className="myteam-pts-block">
@@ -80,7 +79,7 @@ function PlayerRow({ player, seasonTotal, earnedTotal, matches }) {
   )
 }
 
-export default function MyTeam({ data, onNextMatchClick, onChangeTeam }) {
+export default function MyTeam({ data, onNextMatchClick, onSubmitLineup, onChangeTeam }) {
   const storedCode = typeof localStorage !== 'undefined' ? localStorage.getItem('ff_team_code') : null
   const storedTeam = storedCode ? data.teamCodes?.[storedCode] : null
 
@@ -164,6 +163,7 @@ export default function MyTeam({ data, onNextMatchClick, onChangeTeam }) {
     return n + (s[(v - 20) % 10] || s[v] || s[0])
   }
 
+  const cutoffOk = nextCutoff ? new Date(nextCutoff) > new Date() : true
   const cutoffLabel = nextCutoff
     ? new Date(nextCutoff).toLocaleDateString('en-AU', { weekday: 'short', hour: 'numeric', minute: '2-digit' })
     : null
@@ -196,22 +196,36 @@ export default function MyTeam({ data, onNextMatchClick, onChangeTeam }) {
       {nextMatch && (
         <div className="myteam-section">
           <div className="myteam-section-label">Next match</div>
-          <button
-            className="myteam-next-match"
-            onClick={() => onNextMatchClick?.(nextMatch, nextRound)}
-          >
-            <div>
-              <div className="myteam-next-teams">
-                {nextMatch.home} <span style={{ fontWeight: 400, color: 'var(--text-secondary)' }}>v</span> {nextMatch.away}
-              </div>
-              <div className="myteam-next-meta">
-                Round {nextRound}
-                {cutoffLabel && ` · Closes ${cutoffLabel}`}
-                {nextSubmitted && <span className="myteam-submitted-tag"> · ✓ Submitted</span>}
-              </div>
+          <div className="myteam-next-match">
+            <div className="myteam-next-teams">
+              {nextMatch.home} <span style={{ fontWeight: 400, color: 'var(--text-secondary)' }}>v</span> {nextMatch.away}
             </div>
-            <span className="myteam-chevron">›</span>
-          </button>
+            <div className="myteam-next-meta">
+              Round {nextRound}
+              {cutoffLabel && ` · Closes ${cutoffLabel}`}
+            </div>
+            <div className="fixture-user-actions">
+              {nextSubmitted ? (
+                <>
+                  <button className="fixture-submit-link" onClick={() => onNextMatchClick?.(nextMatch, nextRound)}>
+                    View lineup
+                  </button>
+                  {cutoffOk && (
+                    <>
+                      <span className="fixture-action-sep">·</span>
+                      <button className="fixture-submit-link" onClick={() => onSubmitLineup?.(nextRound)}>
+                        Edit lineup
+                      </button>
+                    </>
+                  )}
+                </>
+              ) : cutoffOk ? (
+                <button className="fixture-submit-link" onClick={() => onSubmitLineup?.(nextRound)}>
+                  Submit lineup →
+                </button>
+              ) : null}
+            </div>
+          </div>
         </div>
       )}
 

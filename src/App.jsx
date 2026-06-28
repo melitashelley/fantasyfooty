@@ -18,6 +18,7 @@ export default function App() {
   const [navStack, setNavStack] = useState([])
   const [showSubmitLineup, setShowSubmitLineup] = useState(false)
   const [submitRound, setSubmitRound] = useState(null)
+  const [roundsSelectedRound, setRoundsSelectedRound] = useState(null)
   const [teamCode, setTeamCode] = useState(
     () => (typeof localStorage !== 'undefined' ? localStorage.getItem('ff_team_code') : null)
   )
@@ -123,12 +124,15 @@ export default function App() {
       <MyTeam
         data={data}
         onNextMatchClick={(match, roundNum) => handleUpcomingMatchClick(match, roundNum)}
+        onSubmitLineup={(round) => { setSubmitRound(round); setShowSubmitLineup(true) }}
         onChangeTeam={() => { localStorage.removeItem('ff_team_code'); setTeamCode(null) }}
       />
     )
     return (
       <Rounds
         data={data}
+        selectedRound={roundsSelectedRound ?? data.currentRound}
+        onRoundChange={setRoundsSelectedRound}
         onMatchClick={handleMatchClick}
         onUpcomingMatchClick={handleUpcomingMatchClick}
         onSubmitLineup={(round) => { setSubmitRound(round); setShowSubmitLineup(true) }}
