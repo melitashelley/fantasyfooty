@@ -1,3 +1,5 @@
+import { useState } from 'react'
+
 const POSITION_ORDER = ['Defender', 'Midfielder', 'Forward', 'Ruck']
 const POSITION_LABEL = {
   Defender: 'Defenders',
@@ -50,6 +52,7 @@ function PositionGroup({ pos, players }) {
 
 export default function UpcomingMatchDetail({ match, roundNum, data, onBack, onSubmitLineup }) {
   const { home, away } = match
+  const [lineupExpanded, setLineupExpanded] = useState(false)
 
   const storedCode = (typeof localStorage !== 'undefined' ? localStorage.getItem('ff_team_code') : null)?.toUpperCase() || null
   const storedTeam = storedCode ? data.teamCodes?.[storedCode] : null
@@ -94,15 +97,41 @@ export default function UpcomingMatchDetail({ match, roundNum, data, onBack, onS
       {userInMatch && userSubmitted && (
         <>
           <div className="submitted-banner">
-            <span className="submitted-tick">✓</span> Lineup locked in
+            <span className="submitted-tick">✓</span> Lineup submitted
             {cutoffLabel && <span className="submitted-countdown"> · Closes {cutoffLabel}</span>}
+            {lineupExpanded && cutoffOk && (
+              <button className="submitted-banner-edit" onClick={() => onSubmitLineup(roundNum)}>
+                Edit lineup →
+              </button>
+            )}
           </div>
+
           <div className="upcoming-team-label">{userTeam}</div>
-          <div className="roster-scroll" style={{ paddingBottom: cutoffOk ? '80px' : '16px' }}>
-            {POSITION_ORDER.map((pos) => (
-              <PositionGroup key={pos} pos={pos} players={userGroups[pos]} />
-            ))}
-          </div>
+
+          {!lineupExpanded && (
+            <div className="upcoming-lineup-actions">
+              <button className="upcoming-lineup-link" onClick={() => setLineupExpanded(true)}>
+                View lineup
+              </button>
+              {cutoffOk && (
+                <>
+                  <span className="upcoming-lineup-sep">·</span>
+                  <button className="upcoming-lineup-link" onClick={() => onSubmitLineup(roundNum)}>
+                    Edit lineup
+                  </button>
+                </>
+              )}
+            </div>
+          )}
+
+          {lineupExpanded && (
+            <div className="roster-scroll">
+              {POSITION_ORDER.map((pos) => (
+                <PositionGroup key={pos} pos={pos} players={userGroups[pos]} />
+              ))}
+            </div>
+          )}
+
           {opponentTeam && (
             <div className="opponent-status">
               <span className="opponent-name">{opponentTeam}</span>
@@ -116,13 +145,19 @@ export default function UpcomingMatchDetail({ match, roundNum, data, onBack, onS
 
       {/* User is in this match but hasn't submitted */}
       {userInMatch && !userSubmitted && (
-        <div style={{ padding: '24px 16px', paddingBottom: cutoffOk ? '80px' : '24px' }}>
-          <p style={{ color: 'var(--text-secondary)', fontSize: 14, marginBottom: 16 }}>
-            You haven't submitted your lineup yet.
-            {cutoffLabel && ` Closes ${cutoffLabel}.`}
-          </p>
+        <div style={{ padding: '12px 16px' }}>
+          <div className="upcoming-team-label" style={{ padding: 0, marginBottom: 8 }}>{userTeam}</div>
+          {cutoffOk ? (
+            <div className="upcoming-lineup-actions" style={{ padding: 0 }}>
+              <button className="upcoming-lineup-link" onClick={() => onSubmitLineup(roundNum)}>
+                Submit lineup →
+              </button>
+            </div>
+          ) : (
+            <p style={{ color: 'var(--text-secondary)', fontSize: 13 }}>No lineup submitted.</p>
+          )}
           {opponentTeam && (
-            <div className="opponent-status">
+            <div className="opponent-status" style={{ marginTop: 12, padding: '12px 0' }}>
               <span className="opponent-name">{opponentTeam}</span>
               {opponentSubmitted
                 ? <span className="opponent-submitted">✓ Submitted</span>
@@ -147,14 +182,6 @@ export default function UpcomingMatchDetail({ match, roundNum, data, onBack, onS
               ? <span className="opponent-submitted">✓ Submitted</span>
               : <span className="opponent-pending">Not yet submitted</span>}
           </div>
-        </div>
-      )}
-
-      {userInMatch && cutoffOk && (
-        <div className="submit-footer">
-          <button className="btn-primary btn-submit" onClick={() => onSubmitLineup(roundNum)}>
-            {userSubmitted ? 'Edit Lineup' : 'Submit Lineup →'}
-          </button>
         </div>
       )}
     </div>

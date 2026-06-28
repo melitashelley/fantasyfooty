@@ -898,6 +898,44 @@
   color: var(--text-secondary);
 }
 
+.submitted-banner-edit {
+  margin-left: auto;
+  background: none;
+  border: none;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--status-complete);
+  cursor: pointer;
+  padding: 0;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.upcoming-lineup-actions {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 16px;
+  font-size: 13px;
+}
+
+.upcoming-lineup-link {
+  background: none;
+  border: none;
+  font-family: inherit;
+  font-size: 13px;
+  color: var(--green);
+  cursor: pointer;
+  padding: 0;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.upcoming-lineup-sep {
+  color: var(--text-secondary);
+}
+
 /* ─── My Team tab ───────────────────────────────────────────────── */
 .myteam-screen {
   padding-bottom: 80px;
