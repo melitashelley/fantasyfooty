@@ -428,23 +428,24 @@
 }
 
 .submit-overlay-header {
-  display: flex;
+  display: grid;
+  grid-template-columns: minmax(80px, auto) 1fr minmax(80px, auto);
   align-items: center;
   padding: 14px 16px;
   border-bottom: 1px solid var(--border);
-  gap: 12px;
 }
 
 .submit-overlay-title {
-  flex: 1;
   font-size: 16px;
   font-weight: 700;
   color: var(--text-primary);
+  text-align: center;
 }
 
 .submit-round-label {
   font-size: 13px;
   color: var(--text-secondary);
+  text-align: right;
 }
 
 .close-btn {
@@ -885,6 +886,20 @@
   color: var(--text-tertiary);
   font-size: 13px;
   padding: 0;
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.clear-selection-btn {
+  display: block;
+  margin: 8px auto 0;
+  background: none;
+  border: none;
+  color: var(--text-secondary);
+  font-size: 13px;
+  font-family: inherit;
+  padding: 6px 0;
   cursor: pointer;
   text-decoration: underline;
   text-underline-offset: 3px;

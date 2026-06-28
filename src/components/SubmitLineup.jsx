@@ -145,6 +145,21 @@ export default function SubmitLineup({ data, roundNum, onClose }) {
     }))
   }
 
+  function clearSelection() {
+    setPlayers(prev => {
+      const grouped = {}
+      for (const pos of POSITION_ORDER) grouped[pos] = []
+      for (const p of prev) if (grouped[p.position]) grouped[p.position].push(p)
+      const result = []
+      for (const pos of POSITION_ORDER) {
+        const limit = POSITION_LIMITS[pos] ?? 99
+        grouped[pos].sort((a, b) => a.name.localeCompare(b.name))
+        grouped[pos].forEach((p, i) => result.push({ ...p, isSub: i >= limit, subPriority: null }))
+      }
+      return result
+    })
+  }
+
   function validate() {
     for (const pos of POSITION_ORDER) {
       const posPlayers = players.filter(p => p.position === pos)
@@ -360,6 +375,12 @@ export default function SubmitLineup({ data, roundNum, onClose }) {
           )
         })}
       </div>
+
+      {!pastCutoff && players.length > 0 && (
+        <button className="clear-selection-btn" onClick={clearSelection}>
+          Clear selection
+        </button>
+      )}
 
       {!pastCutoff && players.length > 0 && (
         <div className="submit-footer">
