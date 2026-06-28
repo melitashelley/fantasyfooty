@@ -91,18 +91,28 @@ function MatchCard({ match, status, onClick }) {
   )
 }
 
-function FixtureMatch({ match, onClick }) {
+function FixtureMatch({ match, homeSubmitted, awaySubmitted, isUserMatch, onClick }) {
   return (
     <div
-      className="fixture-match"
-      onClick={onClick}
-      role="button"
-      tabIndex={0}
-      onKeyDown={(e) => e.key === 'Enter' && onClick?.()}
+      className={`fixture-match${isUserMatch ? ' fixture-match--clickable' : ''}`}
+      onClick={isUserMatch ? onClick : undefined}
+      role={isUserMatch ? 'button' : undefined}
+      tabIndex={isUserMatch ? 0 : undefined}
+      onKeyDown={isUserMatch ? (e) => e.key === 'Enter' && onClick?.() : undefined}
     >
-      <span className="fixture-team">{match.home}</span>
+      <div className="fixture-match-side">
+        <span className="fixture-team">{match.home}</span>
+        {homeSubmitted
+          ? <span className="fixture-submitted">✓ Submitted</span>
+          : <span className="fixture-not-submitted">Not submitted</span>}
+      </div>
       <span className="fixture-v">v</span>
-      <span className="fixture-team right">{match.away}</span>
+      <div className="fixture-match-side right">
+        <span className="fixture-team">{match.away}</span>
+        {awaySubmitted
+          ? <span className="fixture-submitted">✓ Submitted</span>
+          : <span className="fixture-not-submitted">Not submitted</span>}
+      </div>
     </div>
   )
 }
@@ -195,13 +205,21 @@ export default function Rounds({ data, onMatchClick, onUpcomingMatchClick, onSub
         ) : (
           <div className="match-list">
             {fixtureMatches.length > 0 ? (
-              fixtureMatches.map((m, i) => (
-                <FixtureMatch
-                  key={i}
-                  match={m}
-                  onClick={() => onUpcomingMatchClick?.(m, selectedRound)}
-                />
-              ))
+              fixtureMatches.map((m, i) => {
+                const homeSubmitted = !!(data.submittedLineups?.[selectedRound]?.[m.home]?.length)
+                const awaySubmitted = !!(data.submittedLineups?.[selectedRound]?.[m.away]?.length)
+                const isUserMatch = storedTeam === m.home || storedTeam === m.away
+                return (
+                  <FixtureMatch
+                    key={i}
+                    match={m}
+                    homeSubmitted={homeSubmitted}
+                    awaySubmitted={awaySubmitted}
+                    isUserMatch={isUserMatch}
+                    onClick={() => onUpcomingMatchClick?.(m, selectedRound)}
+                  />
+                )
+              })
             ) : (
               <p style={{ color: 'var(--text-secondary)', fontSize: '14px', padding: '8px 0' }}>
                 No fixture data available.
