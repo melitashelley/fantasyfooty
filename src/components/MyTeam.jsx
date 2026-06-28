@@ -79,7 +79,7 @@ function PlayerRow({ player, seasonTotal, earnedTotal, matches }) {
   )
 }
 
-export default function MyTeam({ data, onNextMatchClick, onSubmitLineup, onChangeTeam }) {
+export default function MyTeam({ data, onViewLineup, onSubmitLineup, onChangeTeam }) {
   const storedCode = typeof localStorage !== 'undefined' ? localStorage.getItem('ff_team_code') : null
   const storedTeam = storedCode ? data.teamCodes?.[storedCode] : null
 
@@ -207,7 +207,7 @@ export default function MyTeam({ data, onNextMatchClick, onSubmitLineup, onChang
             <div className="fixture-user-actions">
               {nextSubmitted ? (
                 <>
-                  <button className="fixture-submit-link" onClick={() => onNextMatchClick?.(nextMatch, nextRound)}>
+                  <button className="fixture-submit-link" onClick={() => onViewLineup?.(nextMatch, nextRound)}>
                     View lineup
                   </button>
                   {cutoffOk && (

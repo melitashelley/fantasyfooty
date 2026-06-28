@@ -48,6 +48,10 @@ export default function App() {
     setNavStack((prev) => [...prev, { match, roundNum, type: 'upcoming' }])
   }
 
+  function handleViewLineupClick(match, roundNum) {
+    setNavStack((prev) => [...prev, { match, roundNum, type: 'upcoming', lineupExpanded: true }])
+  }
+
   function popView() {
     setNavStack((prev) => prev.slice(0, -1))
   }
@@ -108,6 +112,7 @@ export default function App() {
             data={data}
             onBack={popView}
             onSubmitLineup={(round) => { setSubmitRound(round); setShowSubmitLineup(true) }}
+            initialLineupExpanded={currentView.lineupExpanded || false}
           />
         )
       }
@@ -123,7 +128,7 @@ export default function App() {
     if (tab === 'myteam') return (
       <MyTeam
         data={data}
-        onNextMatchClick={(match, roundNum) => handleUpcomingMatchClick(match, roundNum)}
+        onViewLineup={(match, roundNum) => handleViewLineupClick(match, roundNum)}
         onSubmitLineup={(round) => { setSubmitRound(round); setShowSubmitLineup(true) }}
         onChangeTeam={() => { localStorage.removeItem('ff_team_code'); setTeamCode(null) }}
       />

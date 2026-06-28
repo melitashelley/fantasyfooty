@@ -50,9 +50,9 @@ function PositionGroup({ pos, players }) {
   )
 }
 
-export default function UpcomingMatchDetail({ match, roundNum, data, onBack, onSubmitLineup }) {
+export default function UpcomingMatchDetail({ match, roundNum, data, onBack, onSubmitLineup, initialLineupExpanded = false }) {
   const { home, away } = match
-  const [lineupExpanded, setLineupExpanded] = useState(false)
+  const [lineupExpanded, setLineupExpanded] = useState(initialLineupExpanded)
 
   const storedCode = (typeof localStorage !== 'undefined' ? localStorage.getItem('ff_team_code') : null)?.toUpperCase() || null
   const storedTeam = storedCode ? data.teamCodes?.[storedCode] : null
